@@ -85,7 +85,7 @@ namespace YetAnotherFaviconDownloader.UI
             this.lblSelectDownloadProvider.Name = "lblSelectDownloadProvider";
             this.lblSelectDownloadProvider.Size = new System.Drawing.Size(223, 13);
             this.lblSelectDownloadProvider.TabIndex = 1;
-            this.lblSelectDownloadProvider.Text = "Please select your custom download provider:";
+            this.lblSelectDownloadProvider.Text = "请选择自定义下载源：";
             // 
             // lblDownloadProviderURL
             // 
@@ -102,8 +102,7 @@ namespace YetAnotherFaviconDownloader.UI
             this.chkAccept.Name = "chkAccept";
             this.chkAccept.Size = new System.Drawing.Size(357, 34);
             this.chkAccept.TabIndex = 7;
-            this.chkAccept.Text = "I accept the Terms of Service and the Privacy Policy from the selected third-part" +
-    "y download provider.";
+            this.chkAccept.Text = "我接受所选第三方下载提供商的服务条款和隐私政策";
             this.chkAccept.UseVisualStyleBackColor = true;
             this.chkAccept.CheckedChanged += new System.EventHandler(this.chkAccept_CheckedChanged);
             // 
@@ -126,7 +125,7 @@ namespace YetAnotherFaviconDownloader.UI
             this.MinimizeBox = false;
             this.Name = "DownloadProvider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Custom download provider";
+            this.Text = "自定义下载源";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -6,14 +6,14 @@ namespace YetAnotherFaviconDownloader
 {
     static class ProviderList
     {
-        public static readonly string CustomURLName = "Custom URL";
+        public static readonly string CustomURLName = "自定义 URL";
 
         private static readonly List<Provider> providers = new List<Provider>();
         private static readonly Provider customProvider = new Provider(CustomURLName, null);
 
         static ProviderList()
         {
-            providers.Add(new Provider("None (Default)", null));
+            providers.Add(new Provider("无 (默认)", null));
             providers.Add(new Provider("DuckDuckGo", "https://icons.duckduckgo.com/ip3/{URL:HOST}.ico"));
             providers.Add(new Provider("Favicon Kit", "https://api.faviconkit.com/{URL:HOST}/{YAFD:ICON_SIZE}"));
             providers.Add(new Provider("Google", "https://www.google.com/s2/favicons?domain={URL:HOST}&sz={YAFD:ICON_SIZE}"));

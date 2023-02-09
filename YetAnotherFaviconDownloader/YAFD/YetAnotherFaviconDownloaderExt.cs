@@ -90,8 +90,8 @@ namespace YetAnotherFaviconDownloader
 
             // Add Entry Context menu items
             entrySeparator = new ToolStripSeparator();
-            entryDownloadFaviconsItem = new ToolStripMenuItem("Download &Favicons", menuImage, DownloadFaviconsEntry_Click);
-            entryDownloadFaviconsCustomItem = new ToolStripMenuItem("Download &Favicons (Custom)", menuImage, DownloadFaviconsCustomEntry_Click);
+            entryDownloadFaviconsItem = new ToolStripMenuItem("下载图标", menuImage, DownloadFaviconsEntry_Click);
+            entryDownloadFaviconsCustomItem = new ToolStripMenuItem("下载图标（自定义源）", menuImage, DownloadFaviconsCustomEntry_Click);
             pluginHost.MainWindow.EntryContextMenu.Items.Add(entrySeparator);
             pluginHost.MainWindow.EntryContextMenu.Items.Add(entryDownloadFaviconsItem);
             pluginHost.MainWindow.EntryContextMenu.Items.Add(entryDownloadFaviconsCustomItem);
@@ -99,8 +99,8 @@ namespace YetAnotherFaviconDownloader
 
             // Add Group Context menu items
             groupSeparator = new ToolStripSeparator();
-            groupDownloadFaviconsItem = new ToolStripMenuItem("Download Fa&vicons (recursively)", menuImage, DownloadFaviconsGroup_Click);
-            groupDownloadFaviconsCustomItem = new ToolStripMenuItem("Download Fa&vicons (Custom) (recursively)", menuImage, DownloadFaviconsCustomGroup_Click);
+            groupDownloadFaviconsItem = new ToolStripMenuItem("下载图标（递归）", menuImage, DownloadFaviconsGroup_Click);
+            groupDownloadFaviconsCustomItem = new ToolStripMenuItem("下载图标（自定义源）（递归）", menuImage, DownloadFaviconsCustomGroup_Click);
             pluginHost.MainWindow.GroupContextMenu.Items.Add(groupSeparator);
             pluginHost.MainWindow.GroupContextMenu.Items.Add(groupDownloadFaviconsItem);
             pluginHost.MainWindow.GroupContextMenu.Items.Add(groupDownloadFaviconsCustomItem);
@@ -111,15 +111,15 @@ namespace YetAnotherFaviconDownloader
             // Tools -> YAFD -> SubItems
 
             // Automatic prefix URLs with http(s)://
-            toolsSubItemsPrefixURLsItem = new ToolStripMenuItem("Automatic prefix URLs with http(s)://", null, PrefixURLsMenu_Click);  // TODO: i18n?
+            toolsSubItemsPrefixURLsItem = new ToolStripMenuItem("自动为 URL 添加 http(s):// 前缀", null, PrefixURLsMenu_Click);  // TODO: i18n?
             toolsSubItemsPrefixURLsItem.Checked = Config.GetAutomaticPrefixURLs();
 
             // Use title field if URL field is empty
-            toolsSubItemsTitleFieldItem = new ToolStripMenuItem("Use title field if URL field is empty", null, TitleFieldMenu_Click);  // TODO: i18n?
+            toolsSubItemsTitleFieldItem = new ToolStripMenuItem("如果 URL 字段为空，则使用标题字段", null, TitleFieldMenu_Click);  // TODO: i18n?
             toolsSubItemsTitleFieldItem.Checked = Config.GetUseTitleField();
 
             // Update last modified date when adding/updating icons
-            toolsSubItemsUpdateModifiedItem = new ToolStripMenuItem("Update entry last modification time", null, LastModifiedMenu_Click);  // TODO: i18n?
+            toolsSubItemsUpdateModifiedItem = new ToolStripMenuItem("更新条目最后修改时间", null, LastModifiedMenu_Click);  // TODO: i18n?
             toolsSubItemsUpdateModifiedItem.Checked = Config.GetUpdateLastModified();
 
             // Tools -> YAFD -> Maximum icon size -> SubItems
@@ -139,10 +139,10 @@ namespace YetAnotherFaviconDownloader
                 toolsMaxIconSizeSubItems[index].Checked = true;
             }
 
-            toolsSubItemsMaximumIconSizeItems = new ToolStripMenuItem("Maximum icon size", (Image)pluginHost.Resources.GetObject("B16x16_Edit"), toolsMaxIconSizeSubItems.ToArray());  // TODO: i18n?
+            toolsSubItemsMaximumIconSizeItems = new ToolStripMenuItem("最大图标大小", (Image)pluginHost.Resources.GetObject("B16x16_Edit"), toolsMaxIconSizeSubItems.ToArray());  // TODO: i18n?
 
             // Custom download provider
-            toolsSubItemsDownloadProviderItem = new ToolStripMenuItem("Custom download provider", (Image)pluginHost.Resources.GetObject("B16x16_WWW"), ToolsSubItemsDownloadProviderItem_Click);
+            toolsSubItemsDownloadProviderItem = new ToolStripMenuItem("自定义下载源", (Image)pluginHost.Resources.GetObject("B16x16_WWW"), ToolsSubItemsDownloadProviderItem_Click);
 
             //
 
@@ -160,7 +160,7 @@ namespace YetAnotherFaviconDownloader
                 new ToolStripMenuItem("Reset Icons", null, ResetIconsMenu_Click)
 #endif
             };
-            toolsMenuYAFD = new ToolStripMenuItem("Yet Another Favicon Downloader", menuImage, toolsMenuDropDownItems);
+            toolsMenuYAFD = new ToolStripMenuItem("YAFD 图标下载器", menuImage, toolsMenuDropDownItems);
 
             pluginHost.MainWindow.ToolsMenu.DropDownItems.Add(toolsMenuSeparator);
             pluginHost.MainWindow.ToolsMenu.DropDownItems.Add(toolsMenuYAFD);

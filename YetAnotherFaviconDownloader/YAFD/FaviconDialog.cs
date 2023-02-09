@@ -54,7 +54,7 @@ namespace YetAnotherFaviconDownloader
 
             // Status Progress Form
             Form fStatusDialog;
-            logger = StatusUtil.CreateStatusDialog(pluginHost.MainWindow, out fStatusDialog, "Yet Another Favicon Downloader", "Downloading favicons...", true, false);
+            logger = StatusUtil.CreateStatusDialog(pluginHost.MainWindow, out fStatusDialog, "YAFD 图标下载器", "图标下载中...", true, false);
 
             // Block UI
             pluginHost.MainWindow.UIBlockInteraction(true);
@@ -229,7 +229,7 @@ namespace YetAnotherFaviconDownloader
 
             // Progress 100%
             ReportProgress(progress);
-            status = string.Format("YAFD: Success: {0} / Not Found: {1} / Error: {2}.", progress.Success, progress.NotFound, progress.Error);
+            status = string.Format("YAFD: 成功: {0} / 未找到: {1} / 失败: {2}.", progress.Success, progress.NotFound, progress.Error);
 
             // Prevents inserting duplicate icons
             MergeCustomIcons(icons);
@@ -244,7 +244,7 @@ namespace YetAnotherFaviconDownloader
         private void ReportProgress(ProgressInfo progress)
         {
             logger.SetProgress((uint)progress.Percent);
-            logger.SetText(string.Format("YAFD: Success: {0} / Not Found: {1} / Error: {2} / Remaining: {3}", progress.Success, progress.NotFound, progress.Error, progress.Remaining), LogStatusType.Info);
+            logger.SetText(string.Format("YAFD: 成功: {0} / 未找到: {1} / 失败: {2} / 剩余: {3}", progress.Success, progress.NotFound, progress.Error, progress.Remaining), LogStatusType.Info);
         }
 
         private void MergeCustomIcons(PwCustomIcon[] icons)
