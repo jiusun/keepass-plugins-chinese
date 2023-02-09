@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("KeePassHttp")]
-[assembly: AssemblyDescription("A plugin to expose a secure HTTP interface to your KeePass database")]
+[assembly: AssemblyDescription("A plugin to expose a secure HTTP interface to your KeePass database\n提供 http 接口访问 KeePass 数据库\n插件会在数据库根目录生成一个 KeePassHttp Settings 条目存放共享密钥，在每个条目下创建一个自定义字段（KeePassHttp Settings）存放该条目的权限配置")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Perry Nguyen, Lukas Schulze")]
 [assembly: AssemblyProduct("KeePass Plugin")]

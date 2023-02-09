@@ -47,7 +47,7 @@
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(80, 13);
             label1.TabIndex = 0;
-            label1.Text = "Encryption key:";
+            label1.Text = "共享密钥：";
             // 
             // label2
             // 
@@ -57,9 +57,7 @@
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(440, 48);
             label2.TabIndex = 1;
-            label2.Text = "You have received an association request for the above key. If you would like to " +
-    "allow it access to your KeePass database give it a unique name to identify and a" +
-    "ccept it.";
+            label2.Text = "您收到一个上述密钥的关联请求。如果您同意他访问你的 KeePass 数据库，请给他一个唯一的名字来区分他。";
             // 
             // label3
             // 
@@ -68,7 +66,7 @@
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(57, 13);
             label3.TabIndex = 3;
-            label3.Text = "Key name:";
+            label3.Text = "共享密钥名字：";
             // 
             // KeyLabel
             // 
@@ -77,7 +75,7 @@
             this.KeyLabel.Name = "KeyLabel";
             this.KeyLabel.Size = new System.Drawing.Size(87, 13);
             this.KeyLabel.TabIndex = 2;
-            this.KeyLabel.Text = "Placeholder Text";
+            this.KeyLabel.Text = "请输入共享密钥名字";
             // 
             // KeyName
             // 
@@ -95,7 +93,7 @@
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 5;
-            this.Save.Text = "&Save";
+            this.Save.Text = "保存";
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
@@ -106,7 +104,7 @@
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(75, 23);
             this.Cancel.TabIndex = 6;
-            this.Cancel.Text = "&Cancel";
+            this.Cancel.Text = "取消";
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
@@ -127,7 +125,7 @@
             this.MinimizeBox = false;
             this.Name = "ConfirmAssociationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "KeePassHttp: Confirm New Key Association";
+            this.Text = "KeePassHttp: 确认新的共享密钥";
             this.ResumeLayout(false);
             this.PerformLayout();
 

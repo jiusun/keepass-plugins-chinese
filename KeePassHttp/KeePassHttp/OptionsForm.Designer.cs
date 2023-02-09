@@ -73,7 +73,7 @@
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(88, 28);
             this.cancelButton.TabIndex = 2;
-            this.cancelButton.Text = "&Cancel";
+            this.cancelButton.Text = "取消";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // okButton
@@ -85,7 +85,7 @@
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(88, 28);
             this.okButton.TabIndex = 1;
-            this.okButton.Text = "&Save";
+            this.okButton.Text = "保存";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
@@ -118,7 +118,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(402, 497);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "General";
+            this.tabPage1.Text = "通用";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // SortByUsernameRadioButton
@@ -129,7 +129,7 @@
             this.SortByUsernameRadioButton.Size = new System.Drawing.Size(171, 17);
             this.SortByUsernameRadioButton.TabIndex = 19;
             this.SortByUsernameRadioButton.TabStop = true;
-            this.SortByUsernameRadioButton.Text = "Sort found entries by &username";
+            this.SortByUsernameRadioButton.Text = "返回数据按用户名排序";
             this.SortByUsernameRadioButton.UseVisualStyleBackColor = true;
             // 
             // SortByTitleRadioButton
@@ -140,7 +140,7 @@
             this.SortByTitleRadioButton.Size = new System.Drawing.Size(141, 17);
             this.SortByTitleRadioButton.TabIndex = 18;
             this.SortByTitleRadioButton.TabStop = true;
-            this.SortByTitleRadioButton.Text = "Sort found entries by &title";
+            this.SortByTitleRadioButton.Text = "返回数据按标题排序";
             this.SortByTitleRadioButton.UseVisualStyleBackColor = true;
             //
             // hideExpiredCheckbox
@@ -150,7 +150,7 @@
             this.hideExpiredCheckbox.Name = "hideExpiredCheckbox";
             this.hideExpiredCheckbox.Size = new System.Drawing.Size(256, 17);
             this.hideExpiredCheckbox.TabIndex = 17;
-            this.hideExpiredCheckbox.Text = "Don't return e&xpired entries";
+            this.hideExpiredCheckbox.Text = "不匹配过期条目";
             this.hideExpiredCheckbox.UseVisualStyleBackColor = true;
             //
             // matchSchemesCheckbox
@@ -160,8 +160,7 @@
             this.matchSchemesCheckbox.Name = "matchSchemesCheckbox";
             this.matchSchemesCheckbox.Size = new System.Drawing.Size(375, 30);
             this.matchSchemesCheckbox.TabIndex = 17;
-            this.matchSchemesCheckbox.Text = "&Match URL schemes\r\nonly entries with the same scheme (http://, https://, ftp://," +
-    " ...) are returned";
+            this.matchSchemesCheckbox.Text = "匹配 URL 协议（http://, https://, ftp://, ...）";
             this.matchSchemesCheckbox.UseVisualStyleBackColor = true;
             // 
             // removePermissionsButton
@@ -173,7 +172,7 @@
             this.removePermissionsButton.Name = "removePermissionsButton";
             this.removePermissionsButton.Size = new System.Drawing.Size(372, 28);
             this.removePermissionsButton.TabIndex = 16;
-            this.removePermissionsButton.Text = "Remo&ve all stored permissions from entries in active database";
+            this.removePermissionsButton.Text = "删除当前数据库所有条目的权限字段";
             this.removePermissionsButton.UseVisualStyleBackColor = true;
             this.removePermissionsButton.Click += new System.EventHandler(this.removePermissionsButton_Click);
             // 
@@ -184,7 +183,7 @@
             this.unlockDatabaseCheckbox.Name = "unlockDatabaseCheckbox";
             this.unlockDatabaseCheckbox.Size = new System.Drawing.Size(256, 17);
             this.unlockDatabaseCheckbox.TabIndex = 15;
-            this.unlockDatabaseCheckbox.Text = "Re&quest for unlocking the database if it is locked";
+            this.unlockDatabaseCheckbox.Text = "数据库锁定时，允许请求解锁";
             this.unlockDatabaseCheckbox.UseVisualStyleBackColor = true;
             // 
             // removeButton
@@ -195,7 +194,7 @@
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(372, 28);
             this.removeButton.TabIndex = 11;
-            this.removeButton.Text = "R&emove all shared encryption-keys from active database";
+            this.removeButton.Text = "删除当前数据库所有共享密钥";
             this.removeButton.UseVisualStyleBackColor = true;
             this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
@@ -206,8 +205,7 @@
             this.credMatchingCheckbox.Name = "credMatchingCheckbox";
             this.credMatchingCheckbox.Size = new System.Drawing.Size(238, 30);
             this.credMatchingCheckbox.TabIndex = 9;
-            this.credMatchingCheckbox.Text = "&Return only best matching entries for an URL\r\ninstead of all entries for the who" +
-    "le domain";
+            this.credMatchingCheckbox.Text = "尽可能多个匹配 URL，而不是只匹配域名（主机名）";
             this.credMatchingCheckbox.UseVisualStyleBackColor = true;
             // 
             // credNotifyCheckbox
@@ -217,7 +215,7 @@
             this.credNotifyCheckbox.Name = "credNotifyCheckbox";
             this.credNotifyCheckbox.Size = new System.Drawing.Size(267, 17);
             this.credNotifyCheckbox.TabIndex = 8;
-            this.credNotifyCheckbox.Text = "Sh&ow a notification when credentials are requested";
+            this.credNotifyCheckbox.Text = "显示请求通知";
             this.credNotifyCheckbox.UseVisualStyleBackColor = true;
             // 
             // tabPage2
@@ -244,7 +242,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(402, 472);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Advanced";
+            this.tabPage2.Text = "高级";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // returnStringFieldsWithKphOnlyCheckBox
@@ -254,8 +252,7 @@
             this.returnStringFieldsWithKphOnlyCheckBox.Name = "returnStringFieldsWithKphOnlyCheckBox";
             this.returnStringFieldsWithKphOnlyCheckBox.Size = new System.Drawing.Size(300, 30);
             this.returnStringFieldsWithKphOnlyCheckBox.TabIndex = 31;
-            this.returnStringFieldsWithKphOnlyCheckBox.Text = "Only return advanced string fields which start with \"KPH: \"\r\n(Mind the space afte" +
-    "r KPH:)";
+            this.returnStringFieldsWithKphOnlyCheckBox.Text = "仅返回以 \"KPH: \" 开头的自定义字段（注意 KPH: 后有一个空格）";
             this.returnStringFieldsWithKphOnlyCheckBox.UseVisualStyleBackColor = true;
             // 
             // hostName
@@ -274,8 +271,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(375, 26);
             this.label10.TabIndex = 23;
-            this.label10.Text = "Only change the host to bind to if you want to give access to other computers.\r\nU" +
-    "se \'*\' to bind it to all your IP addresses (potentially dangerous!)\r\n";
+            this.label10.Text = "当需要授权其他计算机访问时才需要修改绑定的主机名\r\n设置为 \'*\' 表示允许所有计算机访问（不安全）";
             // 
             // label8
             // 
@@ -284,9 +280,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(244, 65);
             this.label8.TabIndex = 26;
-            this.label8.Text = "Default: localhost\r\nYou might need to run KeePass as administrator \r\nwhen you cha" +
-    "nge this.\r\nAlso don\'t forget to open the firewall if you want to \r\nbe able to us" +
-    "e it from a different computer.";
+            this.label8.Text = "默认：localhost\r\n可能需要以管理员权限启动 KeePass\r\n才能应用该配置\r\n如果想在其他计算机访问，不要忘了打开防火墙";
             // 
             // label9
             // 
@@ -295,7 +289,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 24;
-            this.label9.Text = "Host:";
+            this.label9.Text = "主机名:";
             // 
             // label7
             // 
@@ -304,8 +298,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(241, 39);
             this.label7.TabIndex = 30;
-            this.label7.Text = "Default: 19455\r\nDon\'t forget to change the port number also in\r\nthe plugins like " +
-    "chromeIPass, PassIFox, kypass,...";
+            this.label7.Text = "默认: 19455\r\n别忘了修改插件中的端口\r\n如：chromeIPass, PassIFox, kypass, ...";
             // 
             // portNumber
             // 
@@ -337,7 +330,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(312, 13);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Change the default port number if you have connection problems";
+            this.label5.Text = "如过连接出现问题，可以尝试使用其他端口";
             // 
             // label6
             // 
@@ -346,7 +339,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 28;
-            this.label6.Text = "Port:";
+            this.label6.Text = "端口:";
             // 
             // label4
             // 
@@ -356,7 +349,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(277, 26);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Automatic creates or updates are not supported\r\nfor string fields!";
+            this.label4.Text = "自定义字段不支持自动创建或修改！";
             // 
             // label3
             // 
@@ -365,9 +358,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(289, 52);
             this.label3.TabIndex = 21;
-            this.label3.Text = "If there are more fields needed than username + password,\r\nnormal \"String Fields\"" +
-    " are used, which can be defined in the\r\n\"Advanced\" tab of an entry.\r\nString fiel" +
-    "ds are returned in alphabetical order.";
+            this.label3.Text = "如果需要使用的字段不仅是 用户名+密码，则使用自定义字段。\r\n可以在 \"高级\" 选项卡中配置。\r\n自定义字段按字母顺序排序。";
             // 
             // returnStringFieldsCheckbox
             // 
@@ -376,7 +367,7 @@
             this.returnStringFieldsCheckbox.Name = "returnStringFieldsCheckbox";
             this.returnStringFieldsCheckbox.Size = new System.Drawing.Size(186, 17);
             this.returnStringFieldsCheckbox.TabIndex = 20;
-            this.returnStringFieldsCheckbox.Text = "&Return also advanced string fields";
+            this.returnStringFieldsCheckbox.Text = "返回自定义字段";
             this.returnStringFieldsCheckbox.UseVisualStyleBackColor = true;
             this.returnStringFieldsCheckbox.CheckedChanged += new System.EventHandler(this.returnStringFieldsCheckbox_CheckedChanged);
             // 
@@ -387,7 +378,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(299, 13);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Only the selected database has to be connected with a client!";
+            this.label2.Text = "只有选定的数据库必须与客户端连接！";
             // 
             // credSearchInAllOpenedDatabases
             // 
@@ -396,7 +387,7 @@
             this.credSearchInAllOpenedDatabases.Name = "credSearchInAllOpenedDatabases";
             this.credSearchInAllOpenedDatabases.Size = new System.Drawing.Size(270, 17);
             this.credSearchInAllOpenedDatabases.TabIndex = 18;
-            this.credSearchInAllOpenedDatabases.Text = "Searc&h in all opened databases for matching entries";
+            this.credSearchInAllOpenedDatabases.Text = "在所有打开的数据库中进行匹配";
             this.credSearchInAllOpenedDatabases.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -408,7 +399,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(391, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Activate the following options only, if you know what you are doing!";
+            this.label1.Text = "仅在你知道自己在做什么时才修改以下配置！！！";
             // 
             // credAllowUpdatesCheckbox
             // 
@@ -417,7 +408,7 @@
             this.credAllowUpdatesCheckbox.Name = "credAllowUpdatesCheckbox";
             this.credAllowUpdatesCheckbox.Size = new System.Drawing.Size(164, 17);
             this.credAllowUpdatesCheckbox.TabIndex = 16;
-            this.credAllowUpdatesCheckbox.Text = "Always allow &updating entries";
+            this.credAllowUpdatesCheckbox.Text = "始终允许修改条目";
             this.credAllowUpdatesCheckbox.UseVisualStyleBackColor = true;
             // 
             // credAllowAccessCheckbox
@@ -427,7 +418,7 @@
             this.credAllowAccessCheckbox.Name = "credAllowAccessCheckbox";
             this.credAllowAccessCheckbox.Size = new System.Drawing.Size(169, 17);
             this.credAllowAccessCheckbox.TabIndex = 15;
-            this.credAllowAccessCheckbox.Text = "Always allow &access to entries";
+            this.credAllowAccessCheckbox.Text = "始终允许访问条目";
             this.credAllowAccessCheckbox.UseVisualStyleBackColor = true;
             // 
             // OptionsForm
@@ -445,7 +436,7 @@
             this.MinimizeBox = false;
             this.Name = "OptionsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "KeePassHttp Options";
+            this.Text = "KeePassHttp 选项";
             this.Load += new System.EventHandler(this.OptionsForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

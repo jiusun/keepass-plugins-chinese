@@ -75,15 +75,12 @@ namespace KeePassHttp
             ConfirmTextLabel.Text = String.Format(
                 Message,
                 _Host,
-                Count == 1 ? "item" : "items",
-                Count == 1 ? "" : "\nYou can only grant access to all items.",
-                Count == 1 ? "" : " to all of them"
+                Count == 1 ? "" : "\n您需要对上述所有条目进行统一授权，"
             );
         }
 
         private int Count = 0;
-        private const string Message = "{0} has requested access to passwords for the above {1}.{2} " +
-            "Please select whether you want to allow access{3}.";
+        private const string Message = "{0} 请求访问上述条目的密码。{1}请选择是否允许访问。";
         private string _Host = null;
         internal KeePassHttpExt Plugin = null;
     }

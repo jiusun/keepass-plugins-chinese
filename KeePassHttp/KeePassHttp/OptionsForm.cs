@@ -71,8 +71,8 @@ namespace KeePassHttp
             if (_restartRequired)
             {
                 MessageBox.Show(
-                    "You have successfully changed the port number and/or the host name.\nA restart of KeePass is required!\n\nPlease restart KeePass now.",
-                    "Restart required!",
+                    "您已经成功修改了主机名或端口。\n需要重新启动 KeePass 才能生效！\n请立即重启 KeePass！",
+                    "需要重新启动 KeePass",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
@@ -112,8 +112,8 @@ namespace KeePassHttp
                         entry.Touch(true);
                         KeePass.Program.MainForm.UpdateUI(false, null, true, db.RootGroup, true, null, true);
                         MessageBox.Show(
-                            String.Format("Successfully removed {0} encryption-key{1} from KeePassHttp Settings.", deleteKeys.Count.ToString(), deleteKeys.Count == 1 ? "" : "s"),
-                            String.Format("Removed {0} key{1} from database", deleteKeys.Count.ToString(), deleteKeys.Count == 1 ? "" : "s"),
+                            String.Format("成功从 KeePassHttp Settings 条目中删除 {0} 个共享密钥", deleteKeys.Count.ToString()),
+                            String.Format("成功删除 {0} 个共享密钥", deleteKeys.Count.ToString()),
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information
                         );
@@ -121,7 +121,7 @@ namespace KeePassHttp
                     else
                     {
                         MessageBox.Show(
-                            "No shared encryption-keys found in KeePassHttp Settings.", "No keys found",
+                            "在 KeePassHttp Settings 条目中没有找到共享密钥", "没有找到共享密钥",
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information
                         );
@@ -129,12 +129,12 @@ namespace KeePassHttp
                 }
                 else
                 {
-                    MessageBox.Show("The active database does not contain an entry of KeePassHttp Settings.", "KeePassHttp Settings not available!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("没有在当前数据库中找到 KeePassHttp Settings 条目！", "KeePassHttp Settings 条目不可用！", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             else
             {
-                MessageBox.Show("The active database is locked!\nPlease unlock the selected database or choose another one which is unlocked.", "Database locked!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("当前数据库已锁定，请解锁当前数据库或选择另一个已解锁的数据库。", "数据库已锁定！", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -150,8 +150,8 @@ namespace KeePassHttp
                 if (entries.Count() > 999)
                 {
                     MessageBox.Show(
-                        String.Format("{0} entries detected!\nSearching and removing permissions could take some while.\n\nWe will inform you when the process has been finished.", entries.Count().ToString()),
-                        String.Format("{0} entries detected", entries.Count().ToString()),
+                        String.Format("检测到 {0} 个条目，删除操作需要花费一些时间。\n\n删除完成后我会通知您。", entries.Count().ToString()),
+                        String.Format("检测到 {0} 个条目", entries.Count().ToString()),
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                     );
@@ -182,8 +182,8 @@ namespace KeePassHttp
                 {
                     KeePass.Program.MainForm.UpdateUI(false, null, true, db.RootGroup, true, null, true);
                     MessageBox.Show(
-                        String.Format("Successfully removed permissions from {0} entr{1}.", counter.ToString(), counter == 1 ? "y" : "ies"),
-                        String.Format("Removed permissions from {0} entr{1}", counter.ToString(), counter == 1 ? "y" : "ies"),
+                        String.Format("成功删除 {0} 个条目中的权限字段", counter.ToString()),
+                        String.Format("成功删除 {0} 个共享密钥", counter.ToString()),
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                     );
@@ -191,8 +191,8 @@ namespace KeePassHttp
                 else
                 {
                     MessageBox.Show(
-                        "The active database does not contain an entry with permissions.",
-                        "No entry with permissions found!",
+                        "当前数据没有包含权限字段的条目",
+                        "找不到具有权限字段的条目",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                     );
@@ -200,7 +200,7 @@ namespace KeePassHttp
             }
             else
             {
-                MessageBox.Show("The active database is locked!\nPlease unlock the selected database or choose another one which is unlocked.", "Database locked!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("当前数据库已锁定，请解锁当前数据库或选择另一个已解锁的数据库。", "数据库已锁定！", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

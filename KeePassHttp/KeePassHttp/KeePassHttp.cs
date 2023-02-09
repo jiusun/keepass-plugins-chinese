@@ -179,7 +179,7 @@ namespace KeePassHttp
             var httpSupported = HttpListener.IsSupported;
             this.host = host;
 
-            var optionsMenu = new ToolStripMenuItem("KeePassHttp Options...");
+            var optionsMenu = new ToolStripMenuItem("KeePassHttp 选项...");
             optionsMenu.Click += OnOptions_Click;
             optionsMenu.Image = KeePassHttp.Properties.Resources.earth_lock;
             //optionsMenu.Image = global::KeePass.Properties.Resources.B16x16_File_Close;
@@ -209,8 +209,8 @@ namespace KeePassHttp
                     httpThread.Start();
                 } catch (HttpListenerException e) {
                     MessageBox.Show(host.MainWindow,
-                        "Unable to start HttpListener!\nDo you really have only one installation of KeePassHttp in your KeePass-directory?\n\n" + e,
-                        "Unable to start HttpListener",
+                        "无法启动 HttpListener!\n你的 KeePass 中真的只有一个 KeePassHttp 吗？\n\n" + e,
+                        "无法启动 HttpListener",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
                     );
@@ -218,8 +218,8 @@ namespace KeePassHttp
             }
             else
             {
-                MessageBox.Show(host.MainWindow, "The .NET HttpListener is not supported on your OS",
-                        ".NET HttpListener not supported",
+                MessageBox.Show(host.MainWindow, "您的操作系统不支持 .NET HttpListener",
+                        "不支持 .NET HttpListener",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
                     );
@@ -245,8 +245,8 @@ namespace KeePassHttp
                 }
                 catch (ThreadInterruptedException) { }
                 catch (HttpListenerException e) {
-                    MessageBox.Show(host.MainWindow, "Unable to process request!\n\n" + e,
-                        "Unable to process request",
+                    MessageBox.Show(host.MainWindow, "无法处理请求！\n\n" + e,
+                        "无法处理请求",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error
                     );

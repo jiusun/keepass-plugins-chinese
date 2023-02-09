@@ -402,7 +402,7 @@ namespace KeePassHttp {
                     var n = String.Join("\n    ", names.ToArray<string>());
 
                     if (configOpt.ReceiveCredentialNotification)
-                        ShowNotification(String.Format("{0}: {1} is receiving credentials for:\n    {2}", r.Id, host, n));
+                        ShowNotification(String.Format("{0}: {1} 正在获取：\n    {2}", r.Id, host, n));
                 }
 
                 resp.Success = true;
@@ -591,8 +591,8 @@ namespace KeePassHttp {
                                 {
                                     keyExistsResult = MessageBox.Show(
                                         win,
-                                        "A shared encryption-key with the name \"" + f.KeyId + "\" already exists.\nDo you want to overwrite it?",
-                                        "Overwrite existing key?",
+                                        "名字为 \"" + f.KeyId + "\" 的共享密钥已经存在，是否要覆盖它？",
+                                        "是否覆盖？",
                                         MessageBoxButtons.YesNo,
                                         MessageBoxIcon.Warning,
                                         MessageBoxDefaultButton.Button1
@@ -738,7 +738,7 @@ namespace KeePassHttp {
                     {
                         result = MessageBox.Show(
                             String.Format("Do you want to update the information in {0} - {1}?", formHost, u),
-                            "Update Entry", MessageBoxButtons.YesNo,
+                            "更新条目", MessageBoxButtons.YesNo,
                             MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                     }
                     else
@@ -746,7 +746,7 @@ namespace KeePassHttp {
                         result = MessageBox.Show(
                             host.MainWindow,
                             String.Format("Do you want to update the information in {0} - {1}?", formHost, u),
-                            "Update Entry", MessageBoxButtons.YesNo,
+                            "更新条目", MessageBoxButtons.YesNo,
                             MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                     }
 

@@ -44,7 +44,7 @@
             AllowButton.Name = "AllowButton";
             AllowButton.Size = new System.Drawing.Size(75, 23);
             AllowButton.TabIndex = 1;
-            AllowButton.Text = "&Allow";
+            AllowButton.Text = "允许";
             AllowButton.UseVisualStyleBackColor = true;
             AllowButton.Click += new System.EventHandler(this.AllowButton_Click);
             // 
@@ -55,7 +55,7 @@
             DenyButton.Name = "DenyButton";
             DenyButton.Size = new System.Drawing.Size(75, 23);
             DenyButton.TabIndex = 2;
-            DenyButton.Text = "&Deny";
+            DenyButton.Text = "拒绝";
             DenyButton.UseVisualStyleBackColor = true;
             DenyButton.Click += new System.EventHandler(this.DenyButton_Click);
             // 
@@ -74,11 +74,11 @@
             // 
             this.RememberCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RememberCheck.AutoSize = true;
-            this.RememberCheck.Location = new System.Drawing.Point(12, 211);
+            this.RememberCheck.Location = new System.Drawing.Point(12, 190);
             this.RememberCheck.Name = "RememberCheck";
             this.RememberCheck.Size = new System.Drawing.Size(138, 17);
             this.RememberCheck.TabIndex = 3;
-            this.RememberCheck.Text = "Remember this decision";
+            this.RememberCheck.Text = "记住选择（保存在条目的自定义字段中）";
             this.RememberCheck.UseVisualStyleBackColor = true;
             // 
             // ConfirmTextLabel
@@ -87,7 +87,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.ConfirmTextLabel.Location = new System.Drawing.Point(9, 136);
             this.ConfirmTextLabel.Name = "ConfirmTextLabel";
-            this.ConfirmTextLabel.Size = new System.Drawing.Size(323, 65);
+            this.ConfirmTextLabel.Size = new System.Drawing.Size(323, 55);
             this.ConfirmTextLabel.TabIndex = 4;
             this.ConfirmTextLabel.Text = "www.somewhere.com has requested access to passwords for the above item(s). Please" +
                 " select whether you want to allow access.";
@@ -106,7 +106,7 @@
             this.MinimizeBox = false;
             this.Name = "AccessControlForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "KeePassHttp: Confirm Access";
+            this.Text = "KeePassHttp: 授权确认";
             this.ResumeLayout(false);
             this.PerformLayout();
 
