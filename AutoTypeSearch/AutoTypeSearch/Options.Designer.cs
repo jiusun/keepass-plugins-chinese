@@ -73,7 +73,7 @@ namespace AutoTypeSearch
             searchOptionsGroup.Size = new System.Drawing.Size(540, 45);
             searchOptionsGroup.TabIndex = 2;
             searchOptionsGroup.TabStop = false;
-            searchOptionsGroup.Text = "Search options";
+            searchOptionsGroup.Text = "搜索选项";
             // 
             // mResolveReferences
             // 
@@ -82,7 +82,7 @@ namespace AutoTypeSearch
             this.mResolveReferences.Name = "mResolveReferences";
             this.mResolveReferences.Size = new System.Drawing.Size(170, 17);
             this.mResolveReferences.TabIndex = 2;
-            this.mResolveReferences.Text = "Resolve fiel&d references (slow)";
+            this.mResolveReferences.Text = "解析字段引用（慢）";
             this.mResolveReferences.UseVisualStyleBackColor = true;
             // 
             // mExcludeExpired
@@ -92,7 +92,7 @@ namespace AutoTypeSearch
             this.mExcludeExpired.Name = "mExcludeExpired";
             this.mExcludeExpired.Size = new System.Drawing.Size(135, 17);
             this.mExcludeExpired.TabIndex = 1;
-            this.mExcludeExpired.Text = "Exclude &expired entries";
+            this.mExcludeExpired.Text = "排除过期条目";
             this.mExcludeExpired.UseVisualStyleBackColor = true;
             // 
             // mCaseSensitive
@@ -102,7 +102,7 @@ namespace AutoTypeSearch
             this.mCaseSensitive.Name = "mCaseSensitive";
             this.mCaseSensitive.Size = new System.Drawing.Size(94, 17);
             this.mCaseSensitive.TabIndex = 0;
-            this.mCaseSensitive.Text = "Case-sensiti&ve";
+            this.mCaseSensitive.Text = "区分大小写";
             this.mCaseSensitive.UseVisualStyleBackColor = true;
             // 
             // searchInGroup
@@ -118,7 +118,7 @@ namespace AutoTypeSearch
             searchInGroup.Size = new System.Drawing.Size(540, 47);
             searchInGroup.TabIndex = 1;
             searchInGroup.TabStop = false;
-            searchInGroup.Text = "Search in";
+            searchInGroup.Text = "搜索字段";
             // 
             // mSearchInTags
             // 
@@ -127,7 +127,7 @@ namespace AutoTypeSearch
             this.mSearchInTags.Name = "mSearchInTags";
             this.mSearchInTags.Size = new System.Drawing.Size(50, 17);
             this.mSearchInTags.TabIndex = 4;
-            this.mSearchInTags.Text = "Ta&gs";
+            this.mSearchInTags.Text = "标记";
             this.mSearchInTags.UseVisualStyleBackColor = true;
             // 
             // mSearchInOtherFields
@@ -137,7 +137,7 @@ namespace AutoTypeSearch
             this.mSearchInOtherFields.Name = "mSearchInOtherFields";
             this.mSearchInOtherFields.Size = new System.Drawing.Size(139, 17);
             this.mSearchInOtherFields.TabIndex = 5;
-            this.mSearchInOtherFields.Text = "&Other unprotected fields";
+            this.mSearchInOtherFields.Text = "未受保护的自定义字段";
             this.mSearchInOtherFields.UseVisualStyleBackColor = true;
             // 
             // mSearchInNotes
@@ -147,7 +147,7 @@ namespace AutoTypeSearch
             this.mSearchInNotes.Name = "mSearchInNotes";
             this.mSearchInNotes.Size = new System.Drawing.Size(54, 17);
             this.mSearchInNotes.TabIndex = 3;
-            this.mSearchInNotes.Text = "Note&s";
+            this.mSearchInNotes.Text = "备注";
             this.mSearchInNotes.UseVisualStyleBackColor = true;
             // 
             // mSearchInUrl
@@ -157,7 +157,7 @@ namespace AutoTypeSearch
             this.mSearchInUrl.Name = "mSearchInUrl";
             this.mSearchInUrl.Size = new System.Drawing.Size(48, 17);
             this.mSearchInUrl.TabIndex = 2;
-            this.mSearchInUrl.Text = "&URL";
+            this.mSearchInUrl.Text = "URL";
             this.mSearchInUrl.UseVisualStyleBackColor = true;
             // 
             // mSearchInUserName
@@ -167,7 +167,7 @@ namespace AutoTypeSearch
             this.mSearchInUserName.Name = "mSearchInUserName";
             this.mSearchInUserName.Size = new System.Drawing.Size(77, 17);
             this.mSearchInUserName.TabIndex = 1;
-            this.mSearchInUserName.Text = "User &name";
+            this.mSearchInUserName.Text = "用户名";
             this.mSearchInUserName.UseVisualStyleBackColor = true;
             // 
             // mSearchInTitle
@@ -177,7 +177,7 @@ namespace AutoTypeSearch
             this.mSearchInTitle.Name = "mSearchInTitle";
             this.mSearchInTitle.Size = new System.Drawing.Size(46, 17);
             this.mSearchInTitle.TabIndex = 0;
-            this.mSearchInTitle.Text = "&Title";
+            this.mSearchInTitle.Text = "标题";
             this.mSearchInTitle.UseVisualStyleBackColor = true;
             // 
             // actionsGroup
@@ -191,7 +191,7 @@ namespace AutoTypeSearch
             actionsGroup.Size = new System.Drawing.Size(540, 67);
             actionsGroup.TabIndex = 3;
             actionsGroup.TabStop = false;
-            actionsGroup.Text = "Actions";
+            actionsGroup.Text = "操作";
             // 
             // mAlternativeAction
             // 
@@ -216,7 +216,7 @@ namespace AutoTypeSearch
             alternativeActionLabel.Name = "alternativeActionLabel";
             alternativeActionLabel.Size = new System.Drawing.Size(159, 13);
             alternativeActionLabel.TabIndex = 2;
-            alternativeActionLabel.Text = "A&lternative action (Shift + Enter):";
+            alternativeActionLabel.Text = "另一个操作（Shift + Enter）：";
             // 
             // defaultActionLabel
             // 
@@ -225,7 +225,7 @@ namespace AutoTypeSearch
             defaultActionLabel.Name = "defaultActionLabel";
             defaultActionLabel.Size = new System.Drawing.Size(110, 13);
             defaultActionLabel.TabIndex = 0;
-            defaultActionLabel.Text = "De&fault action (Enter):";
+            defaultActionLabel.Text = "默认操作（Enter）：";
             // 
             // mShowHotKeyControl
             // 
@@ -248,7 +248,7 @@ namespace AutoTypeSearch
             this.mShowSearchGroup.Size = new System.Drawing.Size(540, 141);
             this.mShowSearchGroup.TabIndex = 0;
             this.mShowSearchGroup.TabStop = false;
-            this.mShowSearchGroup.Text = "Show search window";
+            this.mShowSearchGroup.Text = "显示搜索框";
             // 
             // mShowOnHotKey
             // 
@@ -257,7 +257,7 @@ namespace AutoTypeSearch
             this.mShowOnHotKey.Name = "mShowOnHotKey";
             this.mShowOnHotKey.Size = new System.Drawing.Size(233, 17);
             this.mShowOnHotKey.TabIndex = 1;
-            this.mShowOnHotKey.Text = "Show when system-wide &hot key is pressed:";
+            this.mShowOnHotKey.Text = "按下热键时显示搜索框：";
             this.mShowOnHotKey.UseVisualStyleBackColor = true;
             this.mShowOnHotKey.CheckedChanged += new System.EventHandler(this.mShowOnHotKey_CheckedChanged);
             // 
@@ -268,7 +268,7 @@ namespace AutoTypeSearch
             this.mShowOnIPC.Name = "mShowOnIPC";
             this.mShowOnIPC.Size = new System.Drawing.Size(392, 17);
             this.mShowOnIPC.TabIndex = 3;
-            this.mShowOnIPC.Text = "Show when \"/e1:AutoTypeSearch\" is passed as a &parameter to KeePass.exe";
+            this.mShowOnIPC.Text = "将 \"/e1:AutoTypeSearch\" 作为参数传递给 KeePass.exe 时显示";
             this.mShowOnIPC.UseVisualStyleBackColor = true;
             // 
             // mShowOnFailedSearch
@@ -278,7 +278,7 @@ namespace AutoTypeSearch
             this.mShowOnFailedSearch.Name = "mShowOnFailedSearch";
             this.mShowOnFailedSearch.Size = new System.Drawing.Size(275, 17);
             this.mShowOnFailedSearch.TabIndex = 0;
-            this.mShowOnFailedSearch.Text = "Show &automatically if global auto-type finds no match";
+            this.mShowOnFailedSearch.Text = "全局自动输入未匹配时自动显示搜索框";
             this.mShowOnFailedSearch.UseVisualStyleBackColor = true;
             // 
             // mKeepWindowOpen
@@ -288,7 +288,7 @@ namespace AutoTypeSearch
             this.mKeepWindowOpen.Name = "mKeepWindowOpen";
             this.mKeepWindowOpen.Size = new System.Drawing.Size(303, 17);
             this.mKeepWindowOpen.TabIndex = 4;
-            this.mKeepWindowOpen.Text = "&Keep search window open until dismissed with Escape key";
+            this.mKeepWindowOpen.Text = "保持搜索框打开，直到按下 Esc";
             this.mKeepWindowOpen.UseVisualStyleBackColor = true;
             // 
             // Options

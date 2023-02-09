@@ -16,5 +16,7 @@ echo Compiling PlgX
 echo Releasing PlgX
 move /y PlgX.plgx "AutoTypeSearch.plgx"
 
+copy /y AutoTypeSearch.plgx "../KeePass/Plugins/AutoTypeSearch.plgx"
+
 echo Cleaning up
 rmdir /s /q PlgX

@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AutoTypeSearch")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("AutoTypeSearch 自动输入搜索框")]
+[assembly: AssemblyDescription("在执行自动输入后没有匹配到条目时自动弹出一个搜索框用于进行手动搜索")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Alex Vallat")]
 [assembly: AssemblyProduct("KeePass Plugin")]
