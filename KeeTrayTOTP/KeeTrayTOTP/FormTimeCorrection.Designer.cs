@@ -55,26 +55,26 @@
             // 
             this.ButtonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.ButtonOK.Enabled = false;
-            this.HelpProviderTimeCorrection.SetHelpString(this.ButtonOK, "Adds the server to the time correction list.");
+            this.HelpProviderTimeCorrection.SetHelpString(this.ButtonOK, "将服务器 URL 添加到列表中。");
             this.ButtonOK.Location = new System.Drawing.Point(211, 194);
             this.ButtonOK.Name = "ButtonOK";
             this.HelpProviderTimeCorrection.SetShowHelp(this.ButtonOK, true);
             this.ButtonOK.Size = new System.Drawing.Size(75, 23);
             this.ButtonOK.TabIndex = 0;
-            this.ButtonOK.Text = "&OK";
+            this.ButtonOK.Text = "添加";
             this.ButtonOK.UseVisualStyleBackColor = true;
             this.ButtonOK.Click += new System.EventHandler(this.ButtonOK_Click);
             // 
             // ButtonCancel
             // 
             this.ButtonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.HelpProviderTimeCorrection.SetHelpString(this.ButtonCancel, "Cancels the process and closes the window.");
+            this.HelpProviderTimeCorrection.SetHelpString(this.ButtonCancel, "取消操作并关闭窗口");
             this.ButtonCancel.Location = new System.Drawing.Point(311, 194);
             this.ButtonCancel.Name = "ButtonCancel";
             this.HelpProviderTimeCorrection.SetShowHelp(this.ButtonCancel, true);
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
             this.ButtonCancel.TabIndex = 6;
-            this.ButtonCancel.Text = "&Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
@@ -84,7 +84,7 @@
             this.LabelServerHttpUrlTimeCorrection.Name = "LabelServerHttpUrlTimeCorrection";
             this.LabelServerHttpUrlTimeCorrection.Size = new System.Drawing.Size(96, 21);
             this.LabelServerHttpUrlTimeCorrection.TabIndex = 1;
-            this.LabelServerHttpUrlTimeCorrection.Text = "Server URL :";
+            this.LabelServerHttpUrlTimeCorrection.Text = "服务器 URL：";
             this.LabelServerHttpUrlTimeCorrection.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // WorkerWaitForCheck
@@ -108,7 +108,7 @@
             this.LabelStatusDescriptionTimeCorrection.Name = "LabelStatusDescriptionTimeCorrection";
             this.LabelStatusDescriptionTimeCorrection.Size = new System.Drawing.Size(93, 21);
             this.LabelStatusDescriptionTimeCorrection.TabIndex = 3;
-            this.LabelStatusDescriptionTimeCorrection.Text = "Server status :";
+            this.LabelStatusDescriptionTimeCorrection.Text = "服务器状态：";
             this.LabelStatusDescriptionTimeCorrection.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // PictureBoxTimeCorrection
@@ -132,13 +132,13 @@
             // 
             // ButtonVerify
             // 
-            this.HelpProviderTimeCorrection.SetHelpString(this.ButtonVerify, "Performs verification of the URL to confirm it\'s validity.");
+            this.HelpProviderTimeCorrection.SetHelpString(this.ButtonVerify, "验证服务 URL 是否有效");
             this.ButtonVerify.Location = new System.Drawing.Point(211, 194);
             this.ButtonVerify.Name = "ButtonVerify";
             this.HelpProviderTimeCorrection.SetShowHelp(this.ButtonVerify, true);
             this.ButtonVerify.Size = new System.Drawing.Size(75, 23);
             this.ButtonVerify.TabIndex = 5;
-            this.ButtonVerify.Text = "&Verify";
+            this.ButtonVerify.Text = "验证";
             this.ButtonVerify.UseVisualStyleBackColor = true;
             this.ButtonVerify.Click += new System.EventHandler(this.ButtonVerify_Click);
             // 
@@ -150,7 +150,7 @@
             this.LabelTitleAbout.Name = "LabelTitleAbout";
             this.LabelTitleAbout.Size = new System.Drawing.Size(329, 44);
             this.LabelTitleAbout.TabIndex = 7;
-            this.LabelTitleAbout.Text = "Time Correction Validation";
+            this.LabelTitleAbout.Text = "添加时间校正";
             this.LabelTitleAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PictureBoxAbout
@@ -179,8 +179,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "In order to add time correction, you must first validate that the server can hand" +
-    "le this function. Please input the complete server URL.";
+            this.label1.Text = "添加时间校正必须要先验证服务器是否支持该功能。请输入完整的服务器 URL";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ErrorProviderTimeCorrection
@@ -192,7 +191,7 @@
             this.ComboBoxUrlTimeCorrection.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ComboBoxUrlTimeCorrection.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ComboBoxUrlTimeCorrection.FormattingEnabled = true;
-            this.HelpProviderTimeCorrection.SetHelpString(this.ComboBoxUrlTimeCorrection, "Enter the server URL that you wish to enable Time Correction.");
+            this.HelpProviderTimeCorrection.SetHelpString(this.ComboBoxUrlTimeCorrection, "输入需要启用时间校正的服务器 URL。");
             this.ComboBoxUrlTimeCorrection.Location = new System.Drawing.Point(137, 119);
             this.ComboBoxUrlTimeCorrection.Name = "ComboBoxUrlTimeCorrection";
             this.HelpProviderTimeCorrection.SetShowHelp(this.ComboBoxUrlTimeCorrection, true);

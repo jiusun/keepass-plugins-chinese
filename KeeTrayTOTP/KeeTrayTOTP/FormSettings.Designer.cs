@@ -135,7 +135,7 @@
             this.TabPageContextMenus.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageContextMenus.Size = new System.Drawing.Size(354, 315);
             this.TabPageContextMenus.TabIndex = 0;
-            this.TabPageContextMenus.Text = "Context Menus";
+            this.TabPageContextMenus.Text = "上下文菜单";
             this.TabPageContextMenus.UseVisualStyleBackColor = true;
             //
             // GroupBoxTrayMenu
@@ -150,7 +150,7 @@
             this.GroupBoxTrayMenu.Size = new System.Drawing.Size(335, 160);
             this.GroupBoxTrayMenu.TabIndex = 1;
             this.GroupBoxTrayMenu.TabStop = false;
-            this.GroupBoxTrayMenu.Text = "Tray Menu";
+            this.GroupBoxTrayMenu.Text = "托盘菜单";
             //
             // CheckBoxEnableLegacyTrayMenuProvider
             //
@@ -161,7 +161,7 @@
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxEnableLegacyTrayMenuProvider, true);
             this.CheckBoxEnableLegacyTrayMenuProvider.Size = new System.Drawing.Size(300, 31);
             this.CheckBoxEnableLegacyTrayMenuProvider.TabIndex = 3;
-            this.CheckBoxEnableLegacyTrayMenuProvider.Text = "Enable legacy tray menu \r\n(Requires program restart, not recommended)";
+            this.CheckBoxEnableLegacyTrayMenuProvider.Text = "启用旧版托盘上下文菜单（需要重启 KeePass，不建议！）";
             this.CheckBoxEnableLegacyTrayMenuProvider.UseVisualStyleBackColor = true;
             this.CheckBoxEnableLegacyTrayMenuProvider.CheckedChanged += new System.EventHandler(this.CalculateRefreshNoticeVisibility);
             //
@@ -174,7 +174,7 @@
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxTrimTrayText, true);
             this.CheckBoxTrimTrayText.Size = new System.Drawing.Size(300, 31);
             this.CheckBoxTrimTrayText.TabIndex = 2;
-            this.CheckBoxTrimTrayText.Text = "Hide username if entry title and username is longer then 25 characters";
+            this.CheckBoxTrimTrayText.Text = "如果条目的标题加上用户名超过 25 个字符，则隐藏用户名";
             this.CheckBoxTrimTrayText.UseVisualStyleBackColor = true;
             //
             // CheckBoxShowTOTPEntriesTrayMenu
@@ -186,7 +186,7 @@
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxShowTOTPEntriesTrayMenu, true);
             this.CheckBoxShowTOTPEntriesTrayMenu.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxShowTOTPEntriesTrayMenu.TabIndex = 1;
-            this.CheckBoxShowTOTPEntriesTrayMenu.Text = "Show &TOTP enabled entries in tray menu";
+            this.CheckBoxShowTOTPEntriesTrayMenu.Text = "显示启用 TOTP 的条目";
             this.CheckBoxShowTOTPEntriesTrayMenu.UseVisualStyleBackColor = true;
             this.CheckBoxShowTOTPEntriesTrayMenu.CheckedChanged += new System.EventHandler(this.CalculateRefreshNoticeVisibility);
             //
@@ -196,7 +196,7 @@
             this.LabelDescriptionTrayMenu.Name = "LabelDescriptionTrayMenu";
             this.LabelDescriptionTrayMenu.Size = new System.Drawing.Size(303, 38);
             this.LabelDescriptionTrayMenu.TabIndex = 0;
-            this.LabelDescriptionTrayMenu.Text = "The tray menu is shown when the mouse is right clicked on the KeePass tray icon.";
+            this.LabelDescriptionTrayMenu.Text = "鼠标右键单击 KeePass 托盘图标时，在上下文菜单中显示 TOTP 插件选项";
             //
             // GroupBoxEntryMenu
             //
@@ -208,29 +208,29 @@
             this.GroupBoxEntryMenu.Size = new System.Drawing.Size(335, 125);
             this.GroupBoxEntryMenu.TabIndex = 0;
             this.GroupBoxEntryMenu.TabStop = false;
-            this.GroupBoxEntryMenu.Text = "Entry Menu";
+            this.GroupBoxEntryMenu.Text = "条目菜单";
             //
             // CheckBoxShowSetupTOTPEntryMenu
             //
-            this.HelpProviderSettings.SetHelpString(this.CheckBoxShowSetupTOTPEntryMenu, "Control the visibility of the menu item \"Setup TOTP\" in any entry\'s context subme" +
+            this.HelpProviderSettings.SetHelpString(this.CheckBoxShowSetupTOTPEntryMenu, "控制 \'配置 TOTP\' 选项在上下文菜单中是否显示" +
         "nu \"Selected Entries\".");
             this.CheckBoxShowSetupTOTPEntryMenu.Location = new System.Drawing.Point(19, 95);
             this.CheckBoxShowSetupTOTPEntryMenu.Name = "CheckBoxShowSetupTOTPEntryMenu";
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxShowSetupTOTPEntryMenu, true);
             this.CheckBoxShowSetupTOTPEntryMenu.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxShowSetupTOTPEntryMenu.TabIndex = 2;
-            this.CheckBoxShowSetupTOTPEntryMenu.Text = "Show \'&Setup TOTP\' in context submenu Selected Entries";
+            this.CheckBoxShowSetupTOTPEntryMenu.Text = "显示 \'配置 TOTP\' 选项";
             this.CheckBoxShowSetupTOTPEntryMenu.UseVisualStyleBackColor = true;
             //
             // CheckBoxShowCopyTOTPEntryMenu
             //
-            this.HelpProviderSettings.SetHelpString(this.CheckBoxShowCopyTOTPEntryMenu, "Control the visibility of the menu item \"Copy TOTP\" in any entry\'s context menu.");
+            this.HelpProviderSettings.SetHelpString(this.CheckBoxShowCopyTOTPEntryMenu, "控制 \'复制 TOTP\' 选项在上下文菜单中是否显示");
             this.CheckBoxShowCopyTOTPEntryMenu.Location = new System.Drawing.Point(19, 70);
             this.CheckBoxShowCopyTOTPEntryMenu.Name = "CheckBoxShowCopyTOTPEntryMenu";
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxShowCopyTOTPEntryMenu, true);
             this.CheckBoxShowCopyTOTPEntryMenu.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxShowCopyTOTPEntryMenu.TabIndex = 1;
-            this.CheckBoxShowCopyTOTPEntryMenu.Text = "Show \'Co&py TOTP\' in context menu";
+            this.CheckBoxShowCopyTOTPEntryMenu.Text = "显示 \'复制 TOTP\' 选项";
             this.CheckBoxShowCopyTOTPEntryMenu.UseVisualStyleBackColor = true;
             //
             // LabelDescriptionEntryMenu
@@ -239,8 +239,7 @@
             this.LabelDescriptionEntryMenu.Name = "LabelDescriptionEntryMenu";
             this.LabelDescriptionEntryMenu.Size = new System.Drawing.Size(303, 38);
             this.LabelDescriptionEntryMenu.TabIndex = 0;
-            this.LabelDescriptionEntryMenu.Text = "The entry menu is shown when the mouse is right clicked on a password entry or in" +
-    " the entry list area.";
+            this.LabelDescriptionEntryMenu.Text = "鼠标右键单击条目或条目列表区域时，在上下文菜单中显示 TOTP 插件选项";
             //
             // TabPageEntryList
             //
@@ -250,7 +249,7 @@
             this.TabPageEntryList.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageEntryList.Size = new System.Drawing.Size(354, 315);
             this.TabPageEntryList.TabIndex = 3;
-            this.TabPageEntryList.Text = "Entry List";
+            this.TabPageEntryList.Text = "条目列表";
             this.TabPageEntryList.UseVisualStyleBackColor = true;
             //
             // GroupBoxTOTPColumn
@@ -267,14 +266,13 @@
             //
             // CheckBoxTOTPColumnClipboard
             //
-            this.HelpProviderSettings.SetHelpString(this.CheckBoxTOTPColumnClipboard, "Controls whether or not when you double-click on the TOTP Column in the entry lis" +
-        "t KeePass will copy the generated TOTP to the clipboard.");
+            this.HelpProviderSettings.SetHelpString(this.CheckBoxTOTPColumnClipboard, "控制左键双击 TOTP 列时是否将当前的 TOTP 令牌复制到剪切板。");
             this.CheckBoxTOTPColumnClipboard.Location = new System.Drawing.Point(19, 70);
             this.CheckBoxTOTPColumnClipboard.Name = "CheckBoxTOTPColumnClipboard";
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxTOTPColumnClipboard, true);
             this.CheckBoxTOTPColumnClipboard.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxTOTPColumnClipboard.TabIndex = 1;
-            this.CheckBoxTOTPColumnClipboard.Text = "Enable co&py of the TOTP to the clipboard";
+            this.CheckBoxTOTPColumnClipboard.Text = "启用 TOTP 复制功能（左键双击 TOTP 列）";
             this.CheckBoxTOTPColumnClipboard.UseVisualStyleBackColor = true;
             //
             // LabelDescriptionTOTPColumnTimer
@@ -283,19 +281,17 @@
             this.LabelDescriptionTOTPColumnTimer.Name = "LabelDescriptionTOTPColumnTimer";
             this.LabelDescriptionTOTPColumnTimer.Size = new System.Drawing.Size(303, 38);
             this.LabelDescriptionTOTPColumnTimer.TabIndex = 0;
-            this.LabelDescriptionTOTPColumnTimer.Text = "When shown using the columns menu (View), the TOTP column displays the current ge" +
-    "nerated TOTP.";
+            this.LabelDescriptionTOTPColumnTimer.Text = "在使用列菜单（视图）时，TOTP 列显示当前的 TOTP 令牌";
             //
             // CheckBoxTOTPColumnTimer
             //
-            this.HelpProviderSettings.SetHelpString(this.CheckBoxTOTPColumnTimer, "Controls the visibility of the TOTP timer. The TOTP timer represents the time lef" +
-        "t before the TOTP changes.");
+            this.HelpProviderSettings.SetHelpString(this.CheckBoxTOTPColumnTimer, "控制 TOTP 倒计时的可见性");
             this.CheckBoxTOTPColumnTimer.Location = new System.Drawing.Point(19, 95);
             this.CheckBoxTOTPColumnTimer.Name = "CheckBoxTOTPColumnTimer";
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxTOTPColumnTimer, true);
             this.CheckBoxTOTPColumnTimer.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxTOTPColumnTimer.TabIndex = 2;
-            this.CheckBoxTOTPColumnTimer.Text = "Show &timer value to the left of the TOTP in the column";
+            this.CheckBoxTOTPColumnTimer.Text = "在 TOTP 列中的右侧显示倒计时";
             this.CheckBoxTOTPColumnTimer.UseVisualStyleBackColor = true;
             //
             // TabPageAutoType
@@ -307,7 +303,7 @@
             this.TabPageAutoType.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageAutoType.Size = new System.Drawing.Size(354, 315);
             this.TabPageAutoType.TabIndex = 4;
-            this.TabPageAutoType.Text = "Auto-Type";
+            this.TabPageAutoType.Text = "自动输入";
             this.TabPageAutoType.UseVisualStyleBackColor = true;
             //
             // CheckBoxAutoType
@@ -318,7 +314,7 @@
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxAutoType, true);
             this.CheckBoxAutoType.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxAutoType.TabIndex = 0;
-            this.CheckBoxAutoType.Text = "Enable Auto-&Type function for TOTP generation";
+            this.CheckBoxAutoType.Text = "启用 TOTP 令牌自动输入功能";
             this.CheckBoxAutoType.UseVisualStyleBackColor = true;
             this.CheckBoxAutoType.CheckedChanged += new System.EventHandler(this.CheckBoxAutoType_CheckedChanged);
             //
@@ -334,13 +330,12 @@
             this.GroupBoxAutoType.Size = new System.Drawing.Size(335, 120);
             this.GroupBoxAutoType.TabIndex = 1;
             this.GroupBoxAutoType.TabStop = false;
-            this.GroupBoxAutoType.Text = "Auto-Type Function";
+            this.GroupBoxAutoType.Text = "自动输入功能";
             //
             // TextBoxAutoTypeFieldName
             //
             this.TextBoxAutoTypeFieldName.Enabled = false;
-            this.HelpProviderSettings.SetHelpString(this.TextBoxAutoTypeFieldName, "Customize the Auto-Type Field Name that will be looked for when an auto-type even" +
-        "t is called thus replacing the field name by the generated TOTP.");
+            this.HelpProviderSettings.SetHelpString(this.TextBoxAutoTypeFieldName, "自定义自动输入中 TOTP 对应的变量名。");
             this.TextBoxAutoTypeFieldName.Location = new System.Drawing.Point(130, 64);
             this.TextBoxAutoTypeFieldName.Name = "TextBoxAutoTypeFieldName";
             this.HelpProviderSettings.SetShowHelp(this.TextBoxAutoTypeFieldName, true);
@@ -350,25 +345,25 @@
             //
             // CheckBoxAutoTypeFieldRename
             //
-            this.HelpProviderSettings.SetHelpString(this.CheckBoxAutoTypeFieldRename, "If checked, all existing TOTP fields will be changed to the new TOTP field name.");
+            this.HelpProviderSettings.SetHelpString(this.CheckBoxAutoTypeFieldRename, "如果选中，则会将对所有的旧变量名进行更新");
             this.CheckBoxAutoTypeFieldRename.Location = new System.Drawing.Point(30, 90);
             this.CheckBoxAutoTypeFieldRename.Name = "CheckBoxAutoTypeFieldRename";
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxAutoTypeFieldRename, true);
             this.CheckBoxAutoTypeFieldRename.Size = new System.Drawing.Size(273, 17);
             this.CheckBoxAutoTypeFieldRename.TabIndex = 3;
-            this.CheckBoxAutoTypeFieldRename.Text = "&Replace existing occurrences (recommended)";
+            this.CheckBoxAutoTypeFieldRename.Text = "替换已存在的引用（推荐）";
             this.CheckBoxAutoTypeFieldRename.UseVisualStyleBackColor = true;
             this.CheckBoxAutoTypeFieldRename.CheckedChanged += new System.EventHandler(this.CheckBoxAutoTypeFieldRename_CheckedChanged);
             //
             // CheckBoxAutoTypeFieldName
             //
-            this.HelpProviderSettings.SetHelpString(this.CheckBoxAutoTypeFieldName, "Check to rename the TOTP field name.");
+            this.HelpProviderSettings.SetHelpString(this.CheckBoxAutoTypeFieldName, "自定义 TOTP 令牌在自动输入的变量名。");
             this.CheckBoxAutoTypeFieldName.Location = new System.Drawing.Point(30, 66);
             this.CheckBoxAutoTypeFieldName.Name = "CheckBoxAutoTypeFieldName";
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxAutoTypeFieldName, true);
-            this.CheckBoxAutoTypeFieldName.Size = new System.Drawing.Size(95, 17);
+            this.CheckBoxAutoTypeFieldName.Size = new System.Drawing.Size(100, 17);
             this.CheckBoxAutoTypeFieldName.TabIndex = 1;
-            this.CheckBoxAutoTypeFieldName.Text = "&Field rename :";
+            this.CheckBoxAutoTypeFieldName.Text = "自定义变量名：";
             this.CheckBoxAutoTypeFieldName.UseVisualStyleBackColor = true;
             this.CheckBoxAutoTypeFieldName.CheckedChanged += new System.EventHandler(this.CheckBoxAutoTypeFieldName_CheckedChanged);
             //
@@ -378,8 +373,7 @@
             this.LabelDescriptionAutoType.Name = "LabelDescriptionAutoType";
             this.LabelDescriptionAutoType.Size = new System.Drawing.Size(303, 38);
             this.LabelDescriptionAutoType.TabIndex = 0;
-            this.LabelDescriptionAutoType.Text = "The auto-type function is used to send information, such as passwords, directly i" +
-    "nto forms by emulating keyboard keys.";
+            this.LabelDescriptionAutoType.Text = "自动输入功能通过模拟键盘按键将信息（如：密码）直接写入表单中。";
             //
             // TabPageSync
             //
@@ -392,7 +386,7 @@
             this.TabPageSync.Size = new System.Drawing.Size(354, 315);
             this.TabPageSync.TabIndex = 5;
             this.TabPageSync.Tag = "";
-            this.TabPageSync.Text = "Clock Sync";
+            this.TabPageSync.Text = "时间校正";
             this.TabPageSync.UseVisualStyleBackColor = true;
             //
             // GroupBoxTimeCorrectonList
@@ -406,7 +400,7 @@
             this.GroupBoxTimeCorrectonList.Size = new System.Drawing.Size(334, 144);
             this.GroupBoxTimeCorrectonList.TabIndex = 2;
             this.GroupBoxTimeCorrectonList.TabStop = false;
-            this.GroupBoxTimeCorrectonList.Text = "Time Correction List";
+            this.GroupBoxTimeCorrectonList.Text = "时间校正列表";
             //
             // ToolStripTimeCorrectionList
             //
@@ -432,7 +426,7 @@
             this.ToolStripButtonAddTimeCorrection.Margin = new System.Windows.Forms.Padding(0, 4, 0, 3);
             this.ToolStripButtonAddTimeCorrection.Name = "ToolStripButtonAddTimeCorrection";
             this.ToolStripButtonAddTimeCorrection.Size = new System.Drawing.Size(21, 20);
-            this.ToolStripButtonAddTimeCorrection.Text = "Add Time Correction";
+            this.ToolStripButtonAddTimeCorrection.Text = "添加";
             this.ToolStripButtonAddTimeCorrection.Click += new System.EventHandler(this.ToolStripButtonAddTimeCorrection_Click);
             //
             // ToolStripButtonPropertiesTimeCorrection
@@ -443,7 +437,7 @@
             this.ToolStripButtonPropertiesTimeCorrection.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.ToolStripButtonPropertiesTimeCorrection.Name = "ToolStripButtonPropertiesTimeCorrection";
             this.ToolStripButtonPropertiesTimeCorrection.Size = new System.Drawing.Size(21, 20);
-            this.ToolStripButtonPropertiesTimeCorrection.Text = "Time Correction properties";
+            this.ToolStripButtonPropertiesTimeCorrection.Text = "编辑";
             this.ToolStripButtonPropertiesTimeCorrection.Click += new System.EventHandler(this.ToolStripButtonPropertiesTimeCorrection_Click);
             //
             // ToolStripButtonRemoveTimeCorrection
@@ -454,7 +448,7 @@
             this.ToolStripButtonRemoveTimeCorrection.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.ToolStripButtonRemoveTimeCorrection.Name = "ToolStripButtonRemoveTimeCorrection";
             this.ToolStripButtonRemoveTimeCorrection.Size = new System.Drawing.Size(21, 20);
-            this.ToolStripButtonRemoveTimeCorrection.Text = "Remove Time Correction";
+            this.ToolStripButtonRemoveTimeCorrection.Text = "删除";
             this.ToolStripButtonRemoveTimeCorrection.Click += new System.EventHandler(this.ToolStripButtonRemoveTimeCorrection_Click);
             //
             // ToolStripSeparator1
@@ -471,7 +465,7 @@
             this.ToolStripButtonRefreshTimeCorrection.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.ToolStripButtonRefreshTimeCorrection.Name = "ToolStripButtonRefreshTimeCorrection";
             this.ToolStripButtonRefreshTimeCorrection.Size = new System.Drawing.Size(21, 20);
-            this.ToolStripButtonRefreshTimeCorrection.Text = "Refresh Time Corrections";
+            this.ToolStripButtonRefreshTimeCorrection.Text = "刷新时差";
             this.ToolStripButtonRefreshTimeCorrection.Click += new System.EventHandler(this.ToolStripButtonRefreshTimeCorrection_Click);
             //
             // ListViewTimeCorrectionList
@@ -483,9 +477,7 @@
             this.ColumnTimeCorrection,
             this.ColumnTimeSpan});
             this.ListViewTimeCorrectionList.FullRowSelect = true;
-            this.HelpProviderSettings.SetHelpString(this.ListViewTimeCorrectionList, "Lists the servers that will be checked for a time difference. Even if a URL has b" +
-        "een specified in a TOTP Setting, it must be in this list too or time correction " +
-        "will not be performed.");
+            this.HelpProviderSettings.SetHelpString(this.ListViewTimeCorrectionList, "这里列出了校正时差的URL。即使在 TOTP 设置中指定了 URL，也必须在该列表中才会生效。");
             this.ListViewTimeCorrectionList.Location = new System.Drawing.Point(7, 20);
             this.ListViewTimeCorrectionList.MultiSelect = false;
             this.ListViewTimeCorrectionList.Name = "ListViewTimeCorrectionList";
@@ -500,12 +492,12 @@
             //
             // ColumnTimeCorrection
             //
-            this.ColumnTimeCorrection.Text = "Time Correction";
+            this.ColumnTimeCorrection.Text = "时间校正";
             this.ColumnTimeCorrection.Width = 144;
             //
             // ColumnTimeSpan
             //
-            this.ColumnTimeSpan.Text = "Time Difference";
+            this.ColumnTimeSpan.Text = "时差";
             this.ColumnTimeSpan.Width = 120;
             //
             // ImageListTimeCorrectionList
@@ -525,7 +517,7 @@
             this.HelpProviderSettings.SetShowHelp(this.CheckBoxTimeCorrection, true);
             this.CheckBoxTimeCorrection.Size = new System.Drawing.Size(300, 17);
             this.CheckBoxTimeCorrection.TabIndex = 0;
-            this.CheckBoxTimeCorrection.Text = "Enable &online Time Correction for TOTP generation";
+            this.CheckBoxTimeCorrection.Text = "启用生成 TOTP 的时间校正功能";
             this.CheckBoxTimeCorrection.UseVisualStyleBackColor = true;
             this.CheckBoxTimeCorrection.CheckedChanged += new System.EventHandler(this.CheckBoxTimeCorrection_CheckedChanged);
             //
@@ -541,36 +533,33 @@
             this.GroupBoxTimeCorrection.Size = new System.Drawing.Size(335, 100);
             this.GroupBoxTimeCorrection.TabIndex = 1;
             this.GroupBoxTimeCorrection.TabStop = false;
-            this.GroupBoxTimeCorrection.Text = "Time Correction";
+            this.GroupBoxTimeCorrection.Text = "时间校正";
             //
             // LabelTimeCorrectionMinutes
             //
-            this.HelpProviderSettings.SetHelpString(this.LabelTimeCorrectionMinutes, "Controls the interval between time correction checks. (A time correction check is" +
-        " performed when the database is opened, then this interval applies)");
+            this.HelpProviderSettings.SetHelpString(this.LabelTimeCorrectionMinutes, "设置时间校正间隔。（打开数据库后立即校正一次，然后每隔指定时间校正一次）");
             this.LabelTimeCorrectionMinutes.Location = new System.Drawing.Point(226, 64);
             this.LabelTimeCorrectionMinutes.Name = "LabelTimeCorrectionMinutes";
             this.HelpProviderSettings.SetShowHelp(this.LabelTimeCorrectionMinutes, true);
             this.LabelTimeCorrectionMinutes.Size = new System.Drawing.Size(78, 21);
             this.LabelTimeCorrectionMinutes.TabIndex = 3;
-            this.LabelTimeCorrectionMinutes.Text = "minutes";
+            this.LabelTimeCorrectionMinutes.Text = "分钟";
             this.LabelTimeCorrectionMinutes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             //
             // LabelTimeCorrectionInterval
             //
-            this.HelpProviderSettings.SetHelpString(this.LabelTimeCorrectionInterval, "Controls the interval between time correction checks. (A time correction check is" +
-        " performed when the database is opened, then this interval applies)");
+            this.HelpProviderSettings.SetHelpString(this.LabelTimeCorrectionInterval, "设置时间校正间隔。（打开数据库后立即校正一次，然后每隔指定时间校正一次）");
             this.LabelTimeCorrectionInterval.Location = new System.Drawing.Point(30, 64);
             this.LabelTimeCorrectionInterval.Name = "LabelTimeCorrectionInterval";
             this.HelpProviderSettings.SetShowHelp(this.LabelTimeCorrectionInterval, true);
             this.LabelTimeCorrectionInterval.Size = new System.Drawing.Size(107, 21);
             this.LabelTimeCorrectionInterval.TabIndex = 1;
-            this.LabelTimeCorrectionInterval.Text = "Refresh interval :";
+            this.LabelTimeCorrectionInterval.Text = "校正间隔：";
             this.LabelTimeCorrectionInterval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             //
             // NumericTimeCorrectionInterval
             //
-            this.HelpProviderSettings.SetHelpString(this.NumericTimeCorrectionInterval, "Controls the interval between time correction checks. (A time correction check is" +
-        " performed when the database is opened, then this interval applies)");
+            this.HelpProviderSettings.SetHelpString(this.NumericTimeCorrectionInterval, "设置时间校正间隔。（打开数据库后立即校正一次，然后每隔指定时间校正一次）");
             this.NumericTimeCorrectionInterval.Location = new System.Drawing.Point(143, 64);
             this.NumericTimeCorrectionInterval.Maximum = new decimal(new int[] {
             30000,
@@ -598,8 +587,7 @@
             this.LabelTimeCorrection.Name = "LabelTimeCorrection";
             this.LabelTimeCorrection.Size = new System.Drawing.Size(303, 38);
             this.LabelTimeCorrection.TabIndex = 0;
-            this.LabelTimeCorrection.Text = "Time Correction is used to make sure generated TOTPs are in sync with the server " +
-    "receiving them.";
+            this.LabelTimeCorrection.Text = "时间校正用于确保生成 TOTP 时间和服务器一致";
             //
             // TabPageStorage
             //
@@ -610,7 +598,7 @@
             this.TabPageStorage.Padding = new System.Windows.Forms.Padding(3);
             this.TabPageStorage.Size = new System.Drawing.Size(354, 315);
             this.TabPageStorage.TabIndex = 1;
-            this.TabPageStorage.Text = "Storage";
+            this.TabPageStorage.Text = "存储";
             this.TabPageStorage.UseVisualStyleBackColor = true;
             //
             // GroupBoxTOTPSettings
@@ -623,7 +611,7 @@
             this.GroupBoxTOTPSettings.Size = new System.Drawing.Size(335, 110);
             this.GroupBoxTOTPSettings.TabIndex = 1;
             this.GroupBoxTOTPSettings.TabStop = false;
-            this.GroupBoxTOTPSettings.Text = "TOTP Settings";
+            this.GroupBoxTOTPSettings.Text = "TOTP 配置";
             //
             // LabelTOTPSettingsStringName
             //
@@ -633,7 +621,7 @@
             this.HelpProviderSettings.SetShowHelp(this.LabelTOTPSettingsStringName, true);
             this.LabelTOTPSettingsStringName.Size = new System.Drawing.Size(93, 21);
             this.LabelTOTPSettingsStringName.TabIndex = 1;
-            this.LabelTOTPSettingsStringName.Text = "String Name :";
+            this.LabelTOTPSettingsStringName.Text = "自定义字段名称：";
             this.LabelTOTPSettingsStringName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             //
             // ComboBoxTOTPSettingsStringName
@@ -655,9 +643,7 @@
             this.LabelDescriptionTOTPSettings.Name = "LabelDescriptionTOTPSettings";
             this.LabelDescriptionTOTPSettings.Size = new System.Drawing.Size(303, 48);
             this.LabelDescriptionTOTPSettings.TabIndex = 0;
-            this.LabelDescriptionTOTPSettings.Text = "The settings are used to generate the TOTPs to the specified parameters used by t" +
-    "he receiving server and will be stored in plain text in a custom string using th" +
-    "e name specified below.";
+            this.LabelDescriptionTOTPSettings.Text = "自定义插件在生成 TOTP 时使用的其他参数存储的自定义字段名称。";
             //
             // GroupBoxTOTPSeed
             //
@@ -669,19 +655,17 @@
             this.GroupBoxTOTPSeed.Size = new System.Drawing.Size(335, 110);
             this.GroupBoxTOTPSeed.TabIndex = 0;
             this.GroupBoxTOTPSeed.TabStop = false;
-            this.GroupBoxTOTPSeed.Text = "TOTP Seed";
+            this.GroupBoxTOTPSeed.Text = "TOTP 种子";
             //
             // LabelTOTPSeedStringName
             //
-            this.HelpProviderSettings.SetHelpString(this.LabelTOTPSeedStringName, "Customizes the String Name that the software will look for when trying to generat" +
-        "e TOTP. Make sure that the String contains only the seed. Spaces are automatical" +
-        "ly truncated.");
+            this.HelpProviderSettings.SetHelpString(this.LabelTOTPSeedStringName, "自定义插件在生成 TOTP 时使用的自定义字段名称，确保字符串仅包含种子。空格将会被自动去除。");
             this.LabelTOTPSeedStringName.Location = new System.Drawing.Point(27, 73);
             this.LabelTOTPSeedStringName.Name = "LabelTOTPSeedStringName";
             this.HelpProviderSettings.SetShowHelp(this.LabelTOTPSeedStringName, true);
             this.LabelTOTPSeedStringName.Size = new System.Drawing.Size(93, 21);
             this.LabelTOTPSeedStringName.TabIndex = 1;
-            this.LabelTOTPSeedStringName.Text = "String Name :";
+            this.LabelTOTPSeedStringName.Text = "自定义字段名称：";
             this.LabelTOTPSeedStringName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             //
             // ComboBoxTOTPSeedStringName
@@ -689,9 +673,7 @@
             this.ComboBoxTOTPSeedStringName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.ComboBoxTOTPSeedStringName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.ComboBoxTOTPSeedStringName.FormattingEnabled = true;
-            this.HelpProviderSettings.SetHelpString(this.ComboBoxTOTPSeedStringName, "Customizes the String Name that the software will look for when trying to generat" +
-        "e TOTP. Make sure that the String contains only the seed. Spaces are automatical" +
-        "ly truncated.");
+            this.HelpProviderSettings.SetHelpString(this.ComboBoxTOTPSeedStringName, "自定义插件在生成 TOTP 时使用的种子存储的自定义字段名称。");
             this.ComboBoxTOTPSeedStringName.Location = new System.Drawing.Point(126, 74);
             this.ComboBoxTOTPSeedStringName.Name = "ComboBoxTOTPSeedStringName";
             this.HelpProviderSettings.SetShowHelp(this.ComboBoxTOTPSeedStringName, true);
@@ -704,8 +686,7 @@
             this.LabelDescriptionTOTPSeed.Name = "LabelDescriptionTOTPSeed";
             this.LabelDescriptionTOTPSeed.Size = new System.Drawing.Size(303, 48);
             this.LabelDescriptionTOTPSeed.TabIndex = 0;
-            this.LabelDescriptionTOTPSeed.Text = "The Seed is the key used to generated the TOTPs. It will be stored with protectio" +
-    "n using the name specified below.";
+            this.LabelDescriptionTOTPSeed.Text = "种子是用于生成 TOTP 的密钥。它将使用下面指定的名称保存在条目的自定义字段中。";
             // 
             // LabelRestartRequired
             // 
@@ -715,19 +696,19 @@
             this.LabelRestartRequired.Name = "LabelRestartRequired";
             this.LabelRestartRequired.Size = new System.Drawing.Size(268, 13);
             this.LabelRestartRequired.TabIndex = 4;
-            this.LabelRestartRequired.Text = "Please restart KeePass for the change(s) to take effect.";
+            this.LabelRestartRequired.Text = "请重启 KeePass 使修改生效。";
             this.LabelRestartRequired.Visible = false;
             // 
             // ButtonOK
             //
             this.ButtonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.HelpProviderSettings.SetHelpString(this.ButtonOK, "Saves and applies any changes made to the settings then closes the window.");
+            this.HelpProviderSettings.SetHelpString(this.ButtonOK, "保存并应用所有的修改，然后关闭窗口");
             this.ButtonOK.Location = new System.Drawing.Point(133, 359);
             this.ButtonOK.Name = "ButtonOK";
             this.HelpProviderSettings.SetShowHelp(this.ButtonOK, true);
             this.ButtonOK.Size = new System.Drawing.Size(75, 23);
             this.ButtonOK.TabIndex = 1;
-            this.ButtonOK.Text = "&OK";
+            this.ButtonOK.Text = "保存";
             this.ButtonOK.UseVisualStyleBackColor = true;
             this.ButtonOK.Click += new System.EventHandler(this.ButtonOK_Click);
             //
@@ -735,40 +716,40 @@
             //
             this.ButtonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.HelpProviderSettings.SetHelpString(this.ButtonCancel, "Cancels any changes that are being applied and closes the window.");
+            this.HelpProviderSettings.SetHelpString(this.ButtonCancel, "取消所有未应用的修改，并关闭窗口。");
             this.ButtonCancel.Location = new System.Drawing.Point(214, 359);
             this.ButtonCancel.Name = "ButtonCancel";
             this.HelpProviderSettings.SetShowHelp(this.ButtonCancel, true);
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
             this.ButtonCancel.TabIndex = 2;
-            this.ButtonCancel.Text = "&Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             //
             // ButtonApply
             //
             this.ButtonApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.HelpProviderSettings.SetHelpString(this.ButtonApply, "Saves and applies any changes made to the settings.");
+            this.HelpProviderSettings.SetHelpString(this.ButtonApply, "保存并应用所有的修改。");
             this.ButtonApply.Location = new System.Drawing.Point(295, 359);
             this.ButtonApply.Name = "ButtonApply";
             this.HelpProviderSettings.SetShowHelp(this.ButtonApply, true);
             this.ButtonApply.Size = new System.Drawing.Size(75, 23);
             this.ButtonApply.TabIndex = 3;
             this.ButtonApply.Tag = "";
-            this.ButtonApply.Text = "&Apply";
+            this.ButtonApply.Text = "应用";
             this.ButtonApply.UseVisualStyleBackColor = true;
             this.ButtonApply.Click += new System.EventHandler(this.ButtonApply_Click);
             //
             // ButtonReset
             //
-            this.HelpProviderSettings.SetHelpString(this.ButtonReset, "Resets all Tray TOTP Plugin\'s settings to their default values.");
+            this.HelpProviderSettings.SetHelpString(this.ButtonReset, "将 Tray TOTP 插件所有的设置还原为默认值。");
             this.ButtonReset.Location = new System.Drawing.Point(16, 359);
             this.ButtonReset.Name = "ButtonReset";
             this.HelpProviderSettings.SetShowHelp(this.ButtonReset, true);
             this.ButtonReset.Size = new System.Drawing.Size(75, 23);
             this.ButtonReset.TabIndex = 4;
             this.ButtonReset.Tag = "";
-            this.ButtonReset.Text = "&Defaults";
+            this.ButtonReset.Text = "默认值";
             this.ButtonReset.UseVisualStyleBackColor = true;
             this.ButtonReset.Click += new System.EventHandler(this.ButtonReset_Click);
             //

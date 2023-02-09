@@ -79,7 +79,7 @@
             this.TitleAboutLabel.Size = new System.Drawing.Size(365, 54);
             this.TitleAboutLabel.TabIndex = 11;
             this.TitleAboutLabel.TabStop = true;
-            this.TitleAboutLabel.Text = "TOTP Setup Wizard";
+            this.TitleAboutLabel.Text = "TOTP 配置向导";
             this.TitleAboutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PictureBoxAbout
@@ -111,7 +111,7 @@
             this.SeedDescriptionSetupLabel.Size = new System.Drawing.Size(322, 20);
             this.SeedDescriptionSetupLabel.TabIndex = 4;
             this.SeedDescriptionSetupLabel.TabStop = true;
-            this.SeedDescriptionSetupLabel.Text = "The only format currently supported is Base32. Spaces are trimmed automatically.";
+            this.SeedDescriptionSetupLabel.Text = "目前仅支持 Base32 格式的种子。空格会自动去除。";
             // 
             // InfoPanel
             // 
@@ -129,9 +129,7 @@
             this.StartSetupLabel.Size = new System.Drawing.Size(337, 57);
             this.StartSetupLabel.TabIndex = 0;
             this.StartSetupLabel.TabStop = true;
-            this.StartSetupLabel.Text = "This setup wizard will guide you through the creation or edition process of a Tim" +
-    "e-based One Time Password for the selected entry.\r\n\r\nYou may remove a current TO" +
-    "TP by using the \"Delete\" button.";
+            this.StartSetupLabel.Text = "该向导将帮助您完成所选条目的 TOTP 密码的创建或修改操作。\r\n您可以使用\"删除\"按钮删除当前的 TOTP。";
             // 
             // SeedPanel
             // 
@@ -153,7 +151,7 @@
             this.SeedSetupLabel.Size = new System.Drawing.Size(71, 21);
             this.SeedSetupLabel.TabIndex = 0;
             this.SeedSetupLabel.TabStop = true;
-            this.SeedSetupLabel.Text = "TOTP Seed :";
+            this.SeedSetupLabel.Text = "TOTP 种子：";
             this.SeedSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CheckBoxSeedVisibility
@@ -164,7 +162,7 @@
             this.CheckBoxSeedVisibility.Size = new System.Drawing.Size(113, 17);
             this.CheckBoxSeedVisibility.TabIndex = 1;
             this.CheckBoxSeedVisibility.Tag = "";
-            this.CheckBoxSeedVisibility.Text = "Show TOTP Seed";
+            this.CheckBoxSeedVisibility.Text = "显示 TOTP 种子";
             this.CheckBoxSeedVisibility.UseVisualStyleBackColor = true;
             this.CheckBoxSeedVisibility.CheckedChanged += new System.EventHandler(this.CheckBoxSeedVisibility_CheckedChanged);
             // 
@@ -175,7 +173,7 @@
             this.IntervalSecondsSetupLabel.Size = new System.Drawing.Size(76, 21);
             this.IntervalSecondsSetupLabel.TabIndex = 1;
             this.IntervalSecondsSetupLabel.TabStop = true;
-            this.IntervalSecondsSetupLabel.Text = "seconds";
+            this.IntervalSecondsSetupLabel.Text = "秒";
             this.IntervalSecondsSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // NumericIntervalSetup
@@ -208,7 +206,7 @@
             this.IntervalSetupLabel.Size = new System.Drawing.Size(50, 21);
             this.IntervalSetupLabel.TabIndex = 2;
             this.IntervalSetupLabel.TabStop = true;
-            this.IntervalSetupLabel.Text = "Interval :";
+            this.IntervalSetupLabel.Text = "间隔：";
             this.IntervalSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // IntervalDescriptionSetupLabel
@@ -218,7 +216,7 @@
             this.IntervalDescriptionSetupLabel.Size = new System.Drawing.Size(322, 18);
             this.IntervalDescriptionSetupLabel.TabIndex = 0;
             this.IntervalDescriptionSetupLabel.TabStop = true;
-            this.IntervalDescriptionSetupLabel.Text = "Please specify the time interval. Between 1 and 180 seconds.";
+            this.IntervalDescriptionSetupLabel.Text = "请指定间隔时间（范围：1~180）";
             // 
             // IntervalPanel
             // 
@@ -273,7 +271,7 @@
             this.FormatSetupLabel.Size = new System.Drawing.Size(79, 21);
             this.FormatSetupLabel.TabIndex = 5;
             this.FormatSetupLabel.TabStop = true;
-            this.FormatSetupLabel.Text = "TOTP Format :";
+            this.FormatSetupLabel.Text = "TOTP 格式：";
             this.FormatSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // FormatDescriptionSetupLabel
@@ -283,7 +281,7 @@
             this.FormatDescriptionSetupLabel.Size = new System.Drawing.Size(322, 20);
             this.FormatDescriptionSetupLabel.TabIndex = 1;
             this.FormatDescriptionSetupLabel.TabStop = true;
-            this.FormatDescriptionSetupLabel.Text = "Please select the TOTP Format. (6,7,8 digits or Steam)";
+            this.FormatDescriptionSetupLabel.Text = "请选择 TOTP 的格式。（6、7、8 位或 Steam）";
             // 
             // LengthPanel
             // 
@@ -329,7 +327,7 @@
             this.TimeCorrectionSetupLabel.Size = new System.Drawing.Size(71, 20);
             this.TimeCorrectionSetupLabel.TabIndex = 1;
             this.TimeCorrectionSetupLabel.TabStop = true;
-            this.TimeCorrectionSetupLabel.Text = "Server URL :";
+            this.TimeCorrectionSetupLabel.Text = "服务器 URL：";
             this.TimeCorrectionSetupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TimeCorrectionDescriptionSetupLabel
@@ -339,7 +337,7 @@
             this.TimeCorrectionDescriptionSetupLabel.Size = new System.Drawing.Size(322, 20);
             this.TimeCorrectionDescriptionSetupLabel.TabIndex = 0;
             this.TimeCorrectionDescriptionSetupLabel.TabStop = true;
-            this.TimeCorrectionDescriptionSetupLabel.Text = "Time correction is optional but strongly recommended.\r\n";
+            this.TimeCorrectionDescriptionSetupLabel.Text = "时间校正是选填项（建议配置）\r\n";
             // 
             // TimeCorrectionPanel
             // 
@@ -361,7 +359,7 @@
             this.CancelSetupButton.Name = "CancelSetupButton";
             this.CancelSetupButton.Size = new System.Drawing.Size(75, 23);
             this.CancelSetupButton.TabIndex = 4;
-            this.CancelSetupButton.Text = "&Cancel";
+            this.CancelSetupButton.Text = "取消";
             this.CancelSetupButton.UseVisualStyleBackColor = true;
             // 
             // DeleteSetupButton
@@ -373,7 +371,7 @@
             this.DeleteSetupButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteSetupButton.TabIndex = 6;
             this.DeleteSetupButton.Tag = "";
-            this.DeleteSetupButton.Text = "&Delete";
+            this.DeleteSetupButton.Text = "删除";
             this.DeleteSetupButton.UseVisualStyleBackColor = true;
             this.DeleteSetupButton.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
@@ -387,7 +385,7 @@
             this.FinishSetupButton.Size = new System.Drawing.Size(75, 23);
             this.FinishSetupButton.TabIndex = 5;
             this.FinishSetupButton.Tag = "";
-            this.FinishSetupButton.Text = "&Finish";
+            this.FinishSetupButton.Text = "完成";
             this.FinishSetupButton.UseVisualStyleBackColor = true;
             this.FinishSetupButton.Click += new System.EventHandler(this.ButtonFinish_Click);
             // 
@@ -417,7 +415,7 @@
             this.MinimizeBox = false;
             this.Name = "SetupTOTP";
             this.ShowInTaskbar = false;
-            this.Text = "SetupTOTP";
+            this.Text = "配置 TOTP";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SetupTOTP_FormClosed);
             this.Load += new System.EventHandler(this.SetupTOTP_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAbout)).EndInit();

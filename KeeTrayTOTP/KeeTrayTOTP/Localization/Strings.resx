@@ -118,120 +118,120 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>About</value>
+    <value>关于</value>
   </data>
   <data name="ColumnTOTPCode" xml:space="preserve">
     <value>TOTP</value>
   </data>
   <data name="ColumnTOTPStatus" xml:space="preserve">
-    <value>TOTP Status</value>
+    <value>TOTP 状态</value>
   </data>
   <data name="ConnectionFailed" xml:space="preserve">
-    <value>Connection failed!</value>
+    <value>连接失败！</value>
   </data>
   <data name="CopyTOTP" xml:space="preserve">
-    <value>Copy TOTP</value>
+    <value>复制 TOTP</value>
   </data>
   <data name="DatabaseIsLocked" xml:space="preserve">
-    <value>Database is locked!</value>
+    <value>数据库已锁定！</value>
   </data>
   <data name="DatabaseIsNotOpen" xml:space="preserve">
-    <value>Database is not open!</value>
+    <value>数据库未打开！</value>
   </data>
   <data name="ErrorBadSeed" xml:space="preserve">
-    <value>Error, bad seed!</value>
+    <value>错误，坏种子！</value>
   </data>
   <data name="ErrorBadSettings" xml:space="preserve">
-    <value>Error, bad settings!</value>
+    <value>错误，没有配置！</value>
   </data>
   <data name="ErrorNoSeed" xml:space="preserve">
-    <value>Error, no seed!</value>
+    <value>错误，没有种子！</value>
   </data>
   <data name="Help" xml:space="preserve">
-    <value>Help</value>
+    <value>帮助</value>
   </data>
   <data name="Locked" xml:space="preserve">
-    <value>Locked</value>
+    <value>已锁定</value>
   </data>
   <data name="NoDatabaseIsOpened" xml:space="preserve">
-    <value>No database is opened!</value>
+    <value>没有打开的数据库！</value>
   </data>
   <data name="NoTOTPEntriesFound" xml:space="preserve">
-    <value>No TOTP Entries found</value>
+    <value>没有找到包含 TOTP 的条目</value>
   </data>
   <data name="NoTOTPSeedFound" xml:space="preserve">
-    <value>No TOTP Seed found!</value>
+    <value>没有找到 TOTP 种子！</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>设置</value>
   </data>
   <data name="SettingsAskResetDefaultValues" xml:space="preserve">
-    <value>Are you sure you want to reset all the settings to their default values?</value>
+    <value>确认将所有设置恢复为默认值？</value>
   </data>
   <data name="SettingsCurrentDatabaseLocked" xml:space="preserve">
-    <value>The currently opened database is locked! This function only works with an unlocked database.</value>
+    <value>当前数据库已锁定，该功能仅适用于未锁定的数据库</value>
   </data>
   <data name="SettingsDefaultValuesRestored" xml:space="preserve">
-    <value>Settings restored to defaults!</value>
+    <value>设置已经全部恢复为默认值！</value>
   </data>
   <data name="SettingsEnableFieldRename" xml:space="preserve">
-    <value>Please start by enabling "Field rename".</value>
+    <value>请先启用自定义变量名。</value>
   </data>
   <data name="SettingsErrors" xml:space="preserve">
-    <value>Errors detected!</value>
+    <value>检测到错误！</value>
   </data>
   <data name="SettingsInvalidCharacter" xml:space="preserve">
-    <value>Invalid character!</value>
+    <value>无效字符！</value>
   </data>
   <data name="SettingsInvalidNameSeed" xml:space="preserve">
-    <value>Invalid name! Must be different than the Seed String.</value>
+    <value>无效的名字！必须与种子自定义字段名不同。</value>
   </data>
   <data name="SettingsInvalidNameSetting" xml:space="preserve">
-    <value>Invalid name! Must be different than the Setting String.</value>
+    <value>无效的名字！必须与配置自定义字段名不同。</value>
   </data>
   <data name="SettingsNoInternetDetected" xml:space="preserve">
-    <value>Warning, no internet connection detected!{0}{0}You will not be able to add any server until you are connected.</value>
+    <value>警告, no internet connection detected!{0}{0}You will not be able to add any server until you are connected.</value>
     <comment>{0} must be Environment.NewLine</comment>
   </data>
   <data name="SettingsOpenDatabaseRequired" xml:space="preserve">
-    <value>You must have an opened database in order to use this function.</value>
+    <value>要使用该功能必须先打开数据库。</value>
   </data>
   <data name="Setup" xml:space="preserve">
-    <value>Setup</value>
+    <value>配置</value>
   </data>
   <data name="SetupDelete" xml:space="preserve">
-    <value>Deletes the current TOTP settings.</value>
+    <value>删除当前 TOTP 配置。</value>
   </data>
   <data name="SetupFinish" xml:space="preserve">
-    <value>Closes the wizard.</value>
+    <value>关闭向导。</value>
   </data>
   <data name="SetupInterval" xml:space="preserve">
     <value>Interval must be between{0}nand 180 inclusively!</value>
     <comment>{0} must be Environment.NewLine</comment>
   </data>
   <data name="SetupInvalidCharacter" xml:space="preserve">
-    <value>Invalid character</value>
+    <value>无效字符！</value>
   </data>
   <data name="SetupInvalidPadding" xml:space="preserve">
-    <value>Padding (=) can only appear at the end!</value>
+    <value>Padding (=) 只能出现在末尾！</value>
   </data>
   <data name="SetupInvalidUrl" xml:space="preserve">
-    <value>Invalid URL!</value>
+    <value>无效的 URL！</value>
   </data>
   <data name="SetupLengthMandatory" xml:space="preserve">
-    <value>Length is mandatory!</value>
+    <value>长度为必填项！</value>
   </data>
   <data name="SetupMessageAskDeleteCurrentEntry" xml:space="preserve">
-    <value>Are you sure you want to delete the current entry's TOTP settings?</value>
+    <value>确认要删除当前条目的 TOTP 配置吗？</value>
   </data>
   <data name="SetupSeedCantBeEmpty" xml:space="preserve">
-    <value>Seed cannot be empty!</value>
+    <value>种子不能为空！</value>
   </data>
   <data name="SetupTOTP" xml:space="preserve">
-    <value>Setup TOTP</value>
+    <value>配置 TOTP</value>
   </data>
   <data name="ShowQR" xml:space="preserve">
-    <value>Show QR</value>
+    <value>显示二维码</value>
   </data>
   <data name="SupportUrl" xml:space="preserve">
     <value>https://github.com/KeeTrayTOTP/KeeTrayTOTP/issues</value>
@@ -241,34 +241,34 @@
     <comment>{0} is a database name</comment>
   </data>
   <data name="TcConnectionFailed" xml:space="preserve">
-    <value>The connection to the server failed.</value>
+    <value>服务器连接失败。</value>
   </data>
   <data name="TcPleaseWaitVerifying" xml:space="preserve">
-    <value>Please wait, verifying...</value>
+    <value>请稍后，正在验证...</value>
   </data>
   <data name="TcSucces" xml:space="preserve">
-    <value>Success!</value>
+    <value>成功!</value>
   </data>
   <data name="TcUrlExists" xml:space="preserve">
-    <value>Existing URL!</value>
+    <value>URL 已存在！</value>
   </data>
   <data name="TcUrlInvalid" xml:space="preserve">
-    <value>Invalid URL!</value>
+    <value>无效的 URL！</value>
   </data>
   <data name="TcUrlMustContainHttp" xml:space="preserve">
-    <value>URL must contain "http"!</value>
+    <value>URL 必须包含 "http"！</value>
   </data>
   <data name="TcVerificationCancelled" xml:space="preserve">
-    <value>Verification cancelled!</value>
+    <value>验证已取消！</value>
   </data>
   <data name="TimeCorrection" xml:space="preserve">
-    <value>Time Correction</value>
+    <value>时间校正</value>
   </data>
   <data name="TOTP" xml:space="preserve">
     <value>TOTP</value>
   </data>
   <data name="TOTPEnabled" xml:space="preserve">
-    <value>TOTP Enabled</value>
+    <value>启用TOTP</value>
   </data>
   <data name="TOTPSeed" xml:space="preserve">
     <value>TOTP Seed</value>
@@ -277,9 +277,9 @@
     <value>TOTP Settings</value>
   </data>
   <data name="TrayTOTPPlugin" xml:space="preserve">
-    <value>Tray TOTP Plugin</value>
+    <value>Tray TOTP 插件</value>
   </data>
   <data name="WarningBadURL" xml:space="preserve">
-    <value>Warning, bad URL?</value>
+    <value>警告，URL 错误？</value>
   </data>
 </root>

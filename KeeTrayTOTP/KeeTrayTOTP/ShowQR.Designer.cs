@@ -48,7 +48,7 @@
             this.TitleAboutLabel.Size = new System.Drawing.Size(360, 54);
             this.TitleAboutLabel.TabIndex = 12;
             this.TitleAboutLabel.TabStop = true;
-            this.TitleAboutLabel.Text = "Show QR";
+            this.TitleAboutLabel.Text = "显示二维码";
             this.TitleAboutLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // QROutputPicture
@@ -91,7 +91,7 @@
             this.IssuerLabel.Name = "IssuerLabel";
             this.IssuerLabel.Size = new System.Drawing.Size(64, 13);
             this.IssuerLabel.TabIndex = 16;
-            this.IssuerLabel.Text = "Issuer (Title)";
+            this.IssuerLabel.Text = "Issuer（标题）";
             // 
             // label2
             // 
@@ -100,7 +100,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 17;
-            this.label2.Text = "User (Subtitle)";
+            this.label2.Text = "User (副标题)";
             // 
             // ShowQR
             // 
@@ -119,7 +119,7 @@
             this.MinimumSize = new System.Drawing.Size(200, 330);
             this.Name = "ShowQR";
             this.ShowInTaskbar = false;
-            this.Text = "QR Code";
+            this.Text = "二维码";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShowQR_FormClosed);
             this.Load += new System.EventHandler(this.ShowQR_Load);
             this.ResizeEnd += new System.EventHandler(this.OnResizeEnd);

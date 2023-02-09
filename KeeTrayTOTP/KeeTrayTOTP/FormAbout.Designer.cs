@@ -53,7 +53,7 @@
             this.LabelTitleAbout.Name = "LabelTitleAbout";
             this.LabelTitleAbout.Size = new System.Drawing.Size(363, 44);
             this.LabelTitleAbout.TabIndex = 4;
-            this.LabelTitleAbout.Text = "Tray TOTP Plugin";
+            this.LabelTitleAbout.Text = "Tray TOTP 插件";
             this.LabelTitleAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // LabelBannerAbout
@@ -105,7 +105,7 @@
             this.ButtonClose.Name = "ButtonClose";
             this.ButtonClose.Size = new System.Drawing.Size(75, 23);
             this.ButtonClose.TabIndex = 1;
-            this.ButtonClose.Text = "&Close";
+            this.ButtonClose.Text = "关闭";
             this.ButtonClose.UseVisualStyleBackColor = true;
             // 
             // LabelCopyright
