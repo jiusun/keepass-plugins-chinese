@@ -262,7 +262,7 @@
             this.GroupBoxTOTPColumn.Size = new System.Drawing.Size(335, 125);
             this.GroupBoxTOTPColumn.TabIndex = 0;
             this.GroupBoxTOTPColumn.TabStop = false;
-            this.GroupBoxTOTPColumn.Text = "Custom Column TOTP";
+            this.GroupBoxTOTPColumn.Text = "自定 TOTP 列";
             //
             // CheckBoxTOTPColumnClipboard
             //
