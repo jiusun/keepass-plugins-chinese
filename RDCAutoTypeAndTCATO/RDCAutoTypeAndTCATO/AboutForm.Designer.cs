@@ -50,7 +50,7 @@
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(75, 23);
             this.close.TabIndex = 1;
-            this.close.Text = "Close";
+            this.close.Text = "关闭";
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
@@ -96,7 +96,7 @@
             this.Controls.Add(this.close);
             this.Controls.Add(this.label1);
             this.Name = "AboutForm";
-            this.Text = "KeePass - RDCAutoTypeAndTCATO - About";
+            this.Text = "RDCAutoTypeAndTCATO - 关于";
             this.Load += new System.EventHandler(this.AboutForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

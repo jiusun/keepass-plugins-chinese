@@ -55,7 +55,7 @@
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(141, 23);
             this.close.TabIndex = 4;
-            this.close.Text = "Save and Close";
+            this.close.Text = "保存并关闭";
             this.close.UseVisualStyleBackColor = true;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
@@ -66,7 +66,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(265, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "List of programs (filenames) that have TCATO enabled:";
+            this.label1.Text = "启用 TCATO 的程序（文件名）列表：";
             // 
             // label2
             // 
@@ -75,7 +75,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(284, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "List of programs (file names) that have ClasicType enabled:";
+            this.label2.Text = "启用 RDC 的程序（文件名）列表：";
             // 
             // richTextBox1
             // 
@@ -100,7 +100,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "one by line";
+            this.label3.Text = "一行一个";
             // 
             // button1
             // 
@@ -108,7 +108,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 23);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Add TCATO program";
+            this.button1.Text = "添加 TCATO 程序";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -117,7 +117,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 23);
             this.button2.TabIndex = 11;
-            this.button2.Text = "Add ClasicType program";
+            this.button2.Text = "添加 RDC 程序";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -129,7 +129,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(330, 17);
             this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "Use clipboard for untypeable characters for ClasicType programs";
+            this.checkBox1.Text = "为无法输入的字符使用剪切板";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -141,7 +141,7 @@
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(237, 17);
             this.checkBox2.TabIndex = 13;
-            this.checkBox2.Text = "iexplore.exe (Internet Explorer) (default: false)";
+            this.checkBox2.Text = "iexplore.exe (IE 浏览器) (默认: false)";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // TCATOPrograms
@@ -161,7 +161,7 @@
             this.Controls.Add(this.close);
             this.Controls.Add(this.comboBox1);
             this.Name = "TCATOPrograms";
-            this.Text = "TCATOPrograms";
+            this.Text = "TCATO 程序";
             this.Load += new System.EventHandler(this.TCATOPrograms_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -131,7 +131,7 @@ namespace RDCAutoTypeAndTCATO
             // Add menu item 'RDC workaround enabled'
             //ToolStripMenuItem 
             m_tsmiRDCFix = new ToolStripMenuItem();
-            m_tsmiRDCFix.Text = "RDC workaround enabled";
+            m_tsmiRDCFix.Text = "启用 RDC 支持";
             m_tsmiRDCFix.Click += SwitchRDCState;
             m_tsmiPopup.DropDownItems.Add(m_tsmiRDCFix);
 
@@ -157,7 +157,7 @@ namespace RDCAutoTypeAndTCATO
             // Add menu item 'RDC workaround enabled'
             //ToolStripMenuItem 
             m_tsmiTCATOEnabled = new ToolStripMenuItem();
-            m_tsmiTCATOEnabled.Text = "Program based TCATO enabled";
+            m_tsmiTCATOEnabled.Text = "启用 TCATO 支持";
             m_tsmiTCATOEnabled.Click += SwitchTCATOState;
             m_tsmiPopup.DropDownItems.Add(m_tsmiTCATOEnabled);
 
@@ -173,14 +173,14 @@ namespace RDCAutoTypeAndTCATO
             // Add menu item 'Programs List...'
             //ToolStripMenuItem 
             m_tsmiTCATOList = new ToolStripMenuItem();
-            m_tsmiTCATOList.Text = "Programs List...";
+            m_tsmiTCATOList.Text = "程序列表...";
             m_tsmiTCATOList.Click += RunProgList;
             m_tsmiPopup.DropDownItems.Add(m_tsmiTCATOList);
 
             // Add menu item 'About...'
             //ToolStripMenuItem 
             m_tsmiAbout = new ToolStripMenuItem();
-            m_tsmiAbout.Text = "About...";
+            m_tsmiAbout.Text = "关于...";
             m_tsmiAbout.Click += RunAbout;
             //m_tsmiAbout.Image = KeePass.Properties.Resources.B16x16_Help;
             m_tsmiPopup.DropDownItems.Add(m_tsmiAbout);
@@ -609,7 +609,7 @@ namespace RDCAutoTypeAndTCATO
 
                 if (latest > RDCAutoTypeAndTCATOExt.cur_ver)
                 {
-                    MessageService.ShowWarning("A new version of RDCAutoTypeAndTCATO KeePass Plugin is available. Please download it form the KeePass website.");
+                    MessageService.ShowWarning("RDCAutoTypeAndTCATO 插件有可用的更新，请从 KeePass 官网下载最新版本。");
 
                 }
 

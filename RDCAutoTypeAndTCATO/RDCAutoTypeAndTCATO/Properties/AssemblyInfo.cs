@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RDCAutoTypeAndTCATO")]
-[assembly: AssemblyDescription("This plugin provides customization of Auto-Type behavior depending on the destination program.")]
+[assembly: AssemblyDescription("This plugin provides customization of Auto-Type behavior depending on the destination program.\n这个插件提供了对远程连接桌面（RDC）窗口自动输入的支持。以及对指定应用程序的双通道混淆自动输入的支持（TCATO：Two-Channel Auto-Type Obfuscation）")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Piotr Janusz")]
 [assembly: AssemblyProduct("KeePass Plugin")]
