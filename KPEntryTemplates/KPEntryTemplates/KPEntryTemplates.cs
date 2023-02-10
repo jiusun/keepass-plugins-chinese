@@ -26,12 +26,12 @@ namespace KPEntryTemplates {
 			GlobalWindowManager.WindowAdded += global_window_manager_window_added_handler;
 			ToolStripItemCollection tsMenu = m_host.MainWindow.EntryContextMenu.Items;
 			m_tsmi_set_template_parent = new ToolStripMenuItem();
-			m_tsmi_set_template_parent.Text = "Set Template Parent";
+			m_tsmi_set_template_parent.Text = "指定模板";
 			m_tsmi_set_template_parent.Click += m_tsmi_set_template_parent_Click;
 			m_tsmi_set_template_parent.Image = Resources.Resources.B16x16_KOrganizer;
 			tsMenu.Add(m_tsmi_set_template_parent);
 			m_tsmi_copy_template_string = new ToolStripMenuItem();
-			m_tsmi_copy_template_string.Text = "Copy Template String";
+			m_tsmi_copy_template_string.Text = "复制模板字段";
 			m_tsmi_copy_template_string.Image = Resources.Resources.B16x16_KOrganizer;
 			m_dynCustomStrings = new DynamicMenu(m_tsmi_copy_template_string);
 			m_dynCustomStrings.MenuClick += m_dynCustomStrings_MenuClick;
@@ -75,7 +75,7 @@ namespace KPEntryTemplates {
 			if (tabControl == null) return;
 
 			TabPage tmplPage = tabControl.TabPages[0];
-			if (tmplPage.Text != "Template")
+			if (tmplPage.Text != "模板")
 				return;
 			EntryTemplateManager.SetBaseSizes(tmplPage);
 			foreach (Control c in tmplPage.Controls) 
@@ -97,7 +97,7 @@ namespace KPEntryTemplates {
 
 		void m_tsmi_set_template_parent_Click(object sender, EventArgs e) {
 			if (EntryTemplateManager.entry_is_in_template_group(m_host, m_host.MainWindow.GetSelectedGroup())) {
-				MessageBox.Show("Cannot set the template parent on a template");
+				MessageBox.Show("不能给模板指定模板");
 				return;
 			}
 			PwEntry parent = EntryTemplateManager.show_parent_template_chooser(m_host);

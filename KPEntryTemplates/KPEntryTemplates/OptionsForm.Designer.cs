@@ -53,7 +53,7 @@
 			this.btnOk.Name = "btnOk";
 			this.btnOk.Size = new System.Drawing.Size(75, 23);
 			this.btnOk.TabIndex = 2;
-			this.btnOk.Text = "Save";
+			this.btnOk.Text = "保存";
 			this.btnOk.UseVisualStyleBackColor = true;
 			this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
 			// 
@@ -64,7 +64,7 @@
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(75, 23);
 			this.btnCancel.TabIndex = 3;
-			this.btnCancel.Text = "Cancel";
+			this.btnCancel.Text = "取消";
 			this.btnCancel.UseVisualStyleBackColor = true;
 			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
@@ -78,7 +78,7 @@
 			this.Controls.Add(this.txtOptionVal);
 			this.Controls.Add(this.lblOptionDescr);
 			this.Name = "OptionsForm";
-			this.Text = "Item Options";
+			this.Text = "选项配置";
 			this.Load += new System.EventHandler(this.OptionsForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

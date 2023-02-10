@@ -7,6 +7,16 @@ using KeePassLib;
 
 namespace KPEntryTemplates {
 	partial class EntryTemplateManager {
+		private string I18_customText = "自定义字段";
+		private string I18_titleText = "标题";
+		private string I18_usernameText = "用户名";
+		private string I18_passwordText = "密码";
+		private string I18_password2Text = "确认密码";
+		private string I18_urlText = "网址";
+		private string I18_notesText = "备注";
+		private string I18_overrideURLText = "代替网址";
+		private string I18_expiryDateText = "过期时间";	
+		
 		private DataGridView dataGridView;
 		private DataGridViewTextBoxColumn colTitle;
 		private DataGridViewComboBoxColumn colField;
@@ -74,23 +84,23 @@ namespace KPEntryTemplates {
 			// colTitle
 			// 
 			colTitle.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-			colTitle.HeaderText = "Title";
+			colTitle.HeaderText = "说明文字";
 			colTitle.Name = "colTitle";
 			colTitle.SortMode = DataGridViewColumnSortMode.NotSortable;
 			//
 			// colField
 			// 
-			colField.HeaderText = "Field";
+			colField.HeaderText = "字段类型";
 			colField.Items.AddRange(new object[] {
-			"Custom",
-			"Title",
-			"Username",
-			"Password",
-			"Password Confirmation",
-			"URL",
-			"Notes",
-			"Override URL",
-			"Expiry Date"});
+			I18_customText,
+			I18_titleText,
+			I18_usernameText,
+			I18_passwordText,
+			I18_password2Text,
+			I18_urlText,
+			I18_notesText,
+			I18_overrideURLText,
+			I18_expiryDateText});
 			colField.Name = "colField";
 			colField.Width = DpiUtil.ScaleIntX(105);
 			colField.DropDownWidth = 180;
@@ -100,14 +110,14 @@ namespace KPEntryTemplates {
 			// colFieldName
 			// 
 			colFieldName.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-			colFieldName.HeaderText = "Field Name";
+			colFieldName.HeaderText = "字段名字";
 			colFieldName.Name = "colFieldName";
 			colFieldName.SortMode = DataGridViewColumnSortMode.NotSortable;
 			colFieldName.Width = DpiUtil.ScaleIntX(75);
 			// 
 			// colType
 			// 
-			colType.HeaderText = "Type";
+			colType.HeaderText = "输入类型";
 			colType.Name = "colType";
 			colType.Width = DpiUtil.ScaleIntX(100);
 			colType.Items.AddRange(new object[] {
@@ -125,12 +135,12 @@ namespace KPEntryTemplates {
 			"RichTextbox"
 			});
 			colType.DropDownWidth = 150;
-			colOpt.HeaderText = "Npt";
+			colOpt.HeaderText = "选项";
 			colOpt.Name = "colOpt";
 			colOpt.Width = DpiUtil.ScaleIntX(40);
 			colOpt.UseColumnTextForButtonValue = true;
-			colOpt.Text = "Opt";
-			colOpt.ToolTipText = "Option";
+			colOpt.Text = "选项";
+			colOpt.ToolTipText = "选项";
 			colOptionValue.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
 			colOptionValue.Visible = false;
 			colOptionValue.Name = "colOptionValue";
@@ -139,7 +149,7 @@ namespace KPEntryTemplates {
 
 			page.Controls.Add(dataGridView);
 			remove_as_template_button = new Button();
-			remove_as_template_button.Text = "Remove As Template";
+			remove_as_template_button.Text = "删除模板";
 			remove_as_template_button.Height = BUTTON_HEIGHT;
 			remove_as_template_button.Width = PAGE_WIDTH - DpiUtil.ScaleIntX(140) - DpiUtil.ScaleIntX(45);
 			remove_as_template_button.Left = DpiUtil.ScaleIntX(85);
@@ -167,10 +177,10 @@ namespace KPEntryTemplates {
 				case "Inline":
 				case "RichTextbox"://CustomRichTextBoxEx
 				case "Protected Inline":
-					msg = "How many lines to show for the textbox(1-100)?";
+					msg = "文本框要显示多少行（1~100）？";
 					break;
 				case "Listbox":
-					msg = "Listbox Items, seperate with each with a comma";
+					msg = "列表框的选项，使用逗号分隔。";
 					break;
 			}
 			String ret = OptionsForm.GetOption(msg, (string)row.Cells["colOptionValue"].Value);
@@ -181,7 +191,7 @@ namespace KPEntryTemplates {
 		private bool have_deleted_as_template;
 		void remove_as_template_button_Click(object sender, EventArgs e) {
 			have_deleted_as_template = true;
-			DialogResult res = MessageBox.Show("Are you sure you want to remove this item as a template? This will erase all of the template configuration you have done in this item.", "Confirm Erase", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+			DialogResult res = MessageBox.Show("确认要删除该模板？\r\n删除后会导致所有使用该模板的条目丢失与该模板的关联（不影响数据）。", "确认删除", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 			if (res != DialogResult.Yes)
 				return;
 			our_page.Controls.Remove(dataGridView);
@@ -240,46 +250,74 @@ namespace KPEntryTemplates {
 			string type = "Inline";
 			string fieldName = "";
 			MemoryProtectionConfig conf = m_host.Database.MemoryProtection;
-			switch (field) {
-				case "Title":
-					fieldName = PwDefs.TitleField;
-					type = conf.ProtectTitle ? "Protected Inline" : "Inline";
-					break;
-				case "Username":
-					fieldName = PwDefs.UserNameField;
-					type = conf.ProtectUserName ? "Protected Inline" : "Inline";
-					break;
-				case "Password":
-					fieldName = PwDefs.PasswordField;
-					type = conf.ProtectPassword ? "Protected Inline" : "Inline";
-					break;
-				case "Password Confirmation":
-					fieldName = "@confirm";
-					type = conf.ProtectPassword ? "Protected Inline" : "Inline";
-					break;
-				case "URL":
-					fieldName = PwDefs.UrlField;
-					type = conf.ProtectUrl ? "Protected Inline" : "Inline URL";
-					break;
-				case "Override URL":
-					fieldName = "@override";
-					break;
-				case "Expiry Date":
-					fieldName = "@exp_date";
-					type = "Date Time";
-					break;
-				case "Notes":
-					fieldName = PwDefs.NotesField;
-					type = conf.ProtectNotes ? "Protected Inline" : "RichTextbox";
-					break;
-				default:
-					type = "";
-					read_only = false;
-					break;
+			if(field == I18_titleText){
+				fieldName = PwDefs.TitleField;
+				type = conf.ProtectTitle ? "Protected Inline" : "Inline";
+			} else if (field == I18_usernameText){
+				fieldName = PwDefs.UserNameField;
+				type = conf.ProtectUserName ? "Protected Inline" : "Inline";
+			} else if (field == I18_passwordText){
+				fieldName = PwDefs.PasswordField;
+				type = conf.ProtectPassword ? "Protected Inline" : "Inline";
+			} else if (field == I18_password2Text){
+				fieldName = "@confirm";
+				type = conf.ProtectPassword ? "Protected Inline" : "Inline";
+			} else if (field == I18_urlText){
+				fieldName = PwDefs.UrlField;
+				type = conf.ProtectUrl ? "Protected Inline" : "Inline URL";
+			} else if (field == I18_overrideURLText){
+				fieldName = "@override";
+			} else if (field == I18_expiryDateText){
+				fieldName = "@exp_date";
+				type = "Date Time";
+			} else if (field == I18_notesText){
+				fieldName = PwDefs.NotesField;
+				type = conf.ProtectNotes ? "Protected Inline" : "RichTextbox";
+			} else{
+				type = "";
+				read_only = false;
 			}
-			if (field != "Custom" && !field_is_unique(row, fieldName)) {
-				MessageBox.Show("Another entry in the template is already using that field, cannot change");
-				cell.Value = "Custom";
+			
+			//switch (field) {
+			//	case "Title":
+			//		fieldName = PwDefs.TitleField;
+			//		type = conf.ProtectTitle ? "Protected Inline" : "Inline";
+			//		break;
+			//	case "Username":
+			//		fieldName = PwDefs.UserNameField;
+			//		type = conf.ProtectUserName ? "Protected Inline" : "Inline";
+			//		break;
+			//	case "Password":
+			//		fieldName = PwDefs.PasswordField;
+			//		type = conf.ProtectPassword ? "Protected Inline" : "Inline";
+			//		break;
+			//	case "Password Confirmation":
+			//		fieldName = "@confirm";
+			//		type = conf.ProtectPassword ? "Protected Inline" : "Inline";
+			//		break;
+			//	case "URL":
+			//		fieldName = PwDefs.UrlField;
+			//		type = conf.ProtectUrl ? "Protected Inline" : "Inline URL";
+			//		break;
+			//	case "Override URL":
+			//		fieldName = "@override";
+			//		break;
+			//	case "Expiry Date":
+			//		fieldName = "@exp_date";
+			//		type = "Date Time";
+			//		break;
+			//	case "Notes":
+			//		fieldName = PwDefs.NotesField;
+			//		type = conf.ProtectNotes ? "Protected Inline" : "RichTextbox";
+			//		break;
+			//	default:
+			//		type = "";
+			//		read_only = false;
+			//		break;
+			//}
+			if (field != I18_customText && !field_is_unique(row, fieldName)) {
+				MessageBox.Show("模板中该字段名字已存在");
+				cell.Value = I18_customText;
 				dataGridView.RefreshEdit();
 				return;
 			}
@@ -322,7 +360,7 @@ namespace KPEntryTemplates {
 			row.ErrorText = "";
 			String err = validate_row(row, true, row.Cells[e.ColumnIndex]);
 			if (err != "") {
-				DialogResult res = MessageBox.Show("Error " + err + "\r\nDo you want to retry editing or cancel changes?", "Error Editing Cell", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+				DialogResult res = MessageBox.Show("错误 " + err + "\r\n是否要重新编辑或取消编辑？", "编辑单元格错误", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
 				if (res != DialogResult.Retry) {
 
 					dataGridView.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
@@ -356,15 +394,15 @@ namespace KPEntryTemplates {
 			String title = (string)(edit_vals ? title_cell.EditedFormattedValue : title_cell.Value);
 			if (only_cell == null || field_cell == only_cell) {
 				if (String.IsNullOrEmpty(field_name))
-					err = "Field name cannot be empty";
+					err = "字段名字不能为空";
 				else {
 					if (!field_is_unique(row, field_name))
-						err = "Field name must be unique, and cannot the same as another entry in the template.";
+						err = "字段名字必须唯一。";
 				}
 			}
 			if (only_cell == null || title_cell == only_cell) {
 				if (String.IsNullOrEmpty(title))
-					err = "Title cannot be left empty";
+					err = "标题不能为空";
 			}
 			return err;
 		}
@@ -375,7 +413,7 @@ namespace KPEntryTemplates {
 			String old_row_err = validate_row(row, false, null);
 			if (String.IsNullOrEmpty(old_row_err))
 				return;
-			DialogResult res = MessageBox.Show("The old row values are not valid, if you continue to cancel we will delete the row (make sure all fields are filled out and not named after another)", "Error Editing Row", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+			DialogResult res = MessageBox.Show("存在格式错误的行，如果您继续取消将会删除所有格式错误的行！", "修改错误", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
 			if (res != DialogResult.Retry) {
 				dataGridView.CancelEdit();
 				to_del = row;
@@ -404,7 +442,7 @@ namespace KPEntryTemplates {
 		}
 		void dataGridView_DefaultValuesNeeded(object sender, DataGridViewRowEventArgs e) {
 			e.Row.Cells["colType"].Value = "Inline";
-			e.Row.Cells["colField"].Value = "Custom";
+			e.Row.Cells["colField"].Value = I18_customText;
 		}
 		private Rectangle dragBoxFromMouseDown;
 		private int rowIndexFromMouseDown;
@@ -421,32 +459,32 @@ namespace KPEntryTemplates {
 					row.Cells["colFieldName"].Value = t.fieldName;
 					row.Cells["colType"].Value = t.type;
 					SetRowOptionEnabled(row, t.type);
-					String field = "Custom";
+					String field = I18_customText;
 					bool read_only = true;
 					switch (t.fieldName) {
 						case PwDefs.TitleField:
-							field = "Title";
+							field = I18_titleText;
 							break;
 						case PwDefs.UserNameField:
-							field = "Username";
+							field = I18_usernameText;
 							break;
 						case PwDefs.PasswordField:
-							field = "Password";
+							field = I18_passwordText;
 							break;
 						case PwDefs.UrlField:
-							field = "URL";
+							field = I18_urlText;
 							break;
 						case PwDefs.NotesField:
-							field = "Notes";
+							field = I18_notesText;
 							break;
 						case "@confirm":
-							field = "Password Confirmation";
+							field = I18_password2Text;
 							break;
 						case "@override":
-							field = "Override URL";
+							field = I18_overrideURLText;
 							break;
 						case "@exp_date":
-							field = "Expiry Date";
+							field = I18_expiryDateText;
 							break;
 						default:
 							read_only = false;

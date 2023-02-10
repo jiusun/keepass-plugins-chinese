@@ -28,8 +28,9 @@ namespace KPEntryTemplates {
 		public EntryTemplateManager(IPluginHost host, PwEntryForm form) {
 			m_host = host;
 			this.form = form;
-			our_page = new TabPage("Template");
+			our_page = new TabPage("模板");
 			our_page.AutoScroll = true;
+			our_page.Text = "模板";
 
 			form_tab_control = get_control_from_form(form, "m_tabMain") as TabControl;
 			Debug.Assert(form_tab_control != null);
@@ -114,7 +115,7 @@ namespace KPEntryTemplates {
 			if (!showing_buttons) {
 				if (btnSetupAsTemplate == null) {
 					btnSetupAsTemplate = new Button();
-					btnSetupAsTemplate.Text = "Init As Template";
+					btnSetupAsTemplate.Text = "创建模板";
 					btnSetupAsTemplate.Width = 200;
 					btnSetupAsTemplate.Height = 30;
 					btnSetupAsTemplate.Top = 75;
@@ -122,7 +123,7 @@ namespace KPEntryTemplates {
 					btnSetupAsTemplate.Click += btnSetupAsTemplate_Click;
 
 					btnAddAsChildOfTemplate = new Button();
-					btnAddAsChildOfTemplate.Text = "Set Template Parent";
+					btnAddAsChildOfTemplate.Text = "指定模板";
 					btnAddAsChildOfTemplate.Width = 200;
 					btnAddAsChildOfTemplate.Height = 30;
 					btnAddAsChildOfTemplate.Top = 75;

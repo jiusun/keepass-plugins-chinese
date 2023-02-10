@@ -102,7 +102,7 @@ namespace KPEntryTemplates {
 			m_ctxPwGenProfiles = new ToolStripMenuItem();
 			m_ctxPwGenProfiles.Name = "m_ctxPwGenProfiles";
 			m_ctxPwGenProfiles.Size = new Size(208, 22);
-			m_ctxPwGenProfiles.Text = "Generate Using Profile";
+			m_ctxPwGenProfiles.Text = "使用配置生成密码";
 			m_btnGenPw = new Button();
 			m_btnGenPw.Image = DpiUtil.ScaleImage(Resources.Resources.B15x13_KGPG_Gen, false);
 			m_btnGenPw.Location = new Point(423, 90);
@@ -126,7 +126,7 @@ namespace KPEntryTemplates {
 			m_ctxPwGenOpen.Image = Resources.Resources.B16x16_KGPG_Gen;
 			m_ctxPwGenOpen.Name = "m_ctxPwGenOpen";
 			m_ctxPwGenOpen.Size = new Size(208, 22);
-			m_ctxPwGenOpen.Text = "&Open Password Generator...";
+			m_ctxPwGenOpen.Text = "打开密码生成器...";
 			m_ctxPwGenOpen.Click += OnPwGenOpen;
 			// 
 			// m_ctxPwGenSep0
@@ -138,7 +138,7 @@ namespace KPEntryTemplates {
 			// 
 			m_ctxPwGenProfiles.Name = "m_ctxPwGenProfiles";
 			m_ctxPwGenProfiles.Size = new Size(208, 22);
-			m_ctxPwGenProfiles.Text = "Generate Using Profile";
+			m_ctxPwGenProfiles.Text = "使用配置生成密码";
 		}
 		public static Dictionary<String, String> get_template_title_to_field_dict(IPluginHost m_host, String template_uuid) {
 			Dictionary<String, String> ret = new Dictionary<string, string>();
@@ -354,7 +354,7 @@ namespace KPEntryTemplates {
 							entry_pass = current_password_field = box as SecureTextBoxEx;
 						}
 					} else if (t.type == "Inline URL") {
-						var link = new LinkLabel { Text = "Open" };
+						var link = new LinkLabel { Text = "打开" };
 						link.LinkClicked += (sender, args) => WinUtil.OpenUrl(box.Text ?? "", form.EntryRef);
 						link.Top = control_offset_y;
 						link.Width = DpiUtil.ScaleIntY(50);
@@ -363,9 +363,9 @@ namespace KPEntryTemplates {
 
 				} else if (t.type == "Popout" || t.type == "Protected Popout") {
 					Button btn = new Button();
-					btn.Text = "View/Edit";
+					btn.Text = "查看/编辑";
 					if (t.type == "Protected Popout")
-						btn.Text = "View/Edit Secure";
+						btn.Text = "查看/编辑受保护的字段";
 					btn.Height = BUTTON_HEIGHT;
 					btn.Top = control_offset_y;
 
@@ -383,7 +383,7 @@ namespace KPEntryTemplates {
 				}
 			}
 			client_remove_button = new Button();
-			client_remove_button.Text = "Remove As Template Child";
+			client_remove_button.Text = "取消使用模板";
 			client_remove_button.Height = BUTTON_HEIGHT;
 			SetControlSizing(null, client_remove_button);
 			//client_remove_button.Height = 20;
@@ -398,7 +398,7 @@ namespace KPEntryTemplates {
 			ProtectedString str = form.EntryStrings.Get("_etm_template_uuid");
 			if (str != null)
 				form.EntryStrings.Remove("_etm_template_uuid");
-			MessageBox.Show("Please close the entry to remove the template view, please note this did not delete any of the actual data");
+			MessageBox.Show("请关闭编辑记录窗口来刷新视图，只会删除模板配置自定义字段（_etm_template_uuid）。");
 		}
 
 		void btn_popout_Click(object sender, EventArgs e) {

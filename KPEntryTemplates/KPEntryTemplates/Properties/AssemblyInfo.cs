@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Entry Templates for KeePass")]
-[assembly: AssemblyDescription("Provides Templating support for KeePass")]
+[assembly: AssemblyTitle("Entry Templates for KeePass (更好的模板)")]
+[assembly: AssemblyDescription("Provides Templating support for KeePass\n为 KeePass 提供好的模板支持")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mitch Capper")]
 [assembly: AssemblyProduct("KeePass Plugin")]
