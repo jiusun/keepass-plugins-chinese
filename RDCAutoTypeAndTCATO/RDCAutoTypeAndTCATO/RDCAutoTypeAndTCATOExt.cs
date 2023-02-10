@@ -259,9 +259,9 @@ namespace RDCAutoTypeAndTCATO
 
             if (n > exp)
             {
-                string exp_m = "RDCAutoTypeAndTCATO test KeePass plugin has expired - please check the KeePass web site for the new version";
-                MessageService.ShowWarning(exp_m);
-                e.Sequence = exp_m;
+                //string exp_m = "RDCAutoTypeAndTCATO test KeePass plugin has expired - please check the KeePass web site for the new version";
+                //MessageService.ShowWarning(exp_m);
+                //e.Sequence = exp_m;
             }
 
             bool CT = false;
